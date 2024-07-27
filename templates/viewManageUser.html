@@ -1,0 +1,157 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- [ Main Content ] start -->
+    <section class="pc-container">
+        <div class="pcoded-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <h5 class="m-b-10">Manajemen User</h5>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#!">Manajemen User</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+            <!-- [ Main Content ] start -->
+            <div class="row">
+                <!-- [ Contextual-table ] start -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <button type="button" style="width: 16%; margin-left: 83%;margin-top: 12px;" class="btn btn-primary" data-toggle="modal" data-target="#tambahUserModal">Tambah User</button>
+                        <div class="card-body table-border-style">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>Role</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for user in data %}
+                                        <tr>
+                                            <td>{{ user.id_user }}</td>
+                                            <td>{{ user.username }}</td>
+                                            <td>{{ user.role }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ubahUserModal{{ user.id_user }}">Ubah</button>
+                                                <form action="{{ url_for('hapusUser', id=user.id_user) }}" method="POST" style="display:inline;">
+                                                    <button type="submit" class="btn btn-danger">Hapus User</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ Contextual-table ] end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </section>
+    <!-- [ Main Content ] end -->
+
+<!-- Modal for creating new scan -->
+<div class="modal fade" id="tambahUserModal" tabindex="-1" role="dialog" aria-labelledby="tambahUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="/admin/manageUser" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tambahUserModalLabel">Tambah User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control" id="Username" name="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" name="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roleUser">Pilih Role User</label>
+                        <select class="form-control" name="role">
+                        <option value="admin">Admin</option>
+                        <option value="operator">Operator</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Buat</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for editing user -->
+{% for user in data %}
+<div class="modal fade" id="ubahUserModal{{ user.id_user }}" tabindex="-1" role="dialog" aria-labelledby="ubahUserModalLabel{{ user.id_user }}" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="{{ url_for('ubahUser', id=user.id_user) }}" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ubahUserModalLabel{{ user.id_user }}">Ubah User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Username{{ user.id_user }}">Username</label>
+                        <input type="text" class="form-control" id="Username{{ user.id_user }}" name="Username" value="{{ user.username }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password{{ user.id_user }}">Password (biarkan kosong jika tidak ingin mengubah)</label>
+                        <input type="password" class="form-control" id="Password{{ user.id_user }}" name="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="roleUser{{ user.id_user }}">Pilih Role User</label>
+                        <select class="form-control" name="role">
+                            <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Admin</option>
+                            <option value="operator" {% if user.role == 'operator' %}selected{% endif %}>Operator</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock javascripts %}

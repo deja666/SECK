@@ -1,0 +1,59 @@
+{
+    "target": "https://helpdesk.ksupostra.id/",
+    "alerts": [
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mengurangi jenis serangan tertentu. Termasuk (tetapi tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web untuk menyatakan sumber konten yang disetujui yang seharusnya diizinkan dimuat oleh browser di halaman tersebut \u2014 jenis yang dicakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi dengan benar untuk menyetel header Kebijakan Keamanan Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        }
+    ]
+}

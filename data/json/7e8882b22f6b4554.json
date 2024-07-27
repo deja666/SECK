@@ -1,0 +1,1139 @@
+{
+    "target": "http://192.168.1.1",
+    "alerts": [
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Respons Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respons yang diberikan telah diidentifikasi berisi token manajemen sesi. Kolom 'Info Lainnya' berisi serangkaian token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang ditetapkan ke \"Deteksi Otomatis\", maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional dan bukan kerentanan, jadi tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Penyertaan Berkas Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman memuat satu atau beberapa berkas skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan berkas sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumbernya tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Tidak Ada Token Anti-CSRF",
+            "deskripsi": "Tidak ada token Anti-CSRF yang ditemukan dalam formulir pengiriman HTML.\nPemalsuan permintaan lintas situs adalah serangan yang melibatkan pemaksaan korban untuk mengirimkan Permintaan HTTP ke tujuan target tanpa sepengetahuan atau niat mereka untuk melakukan tindakan sebagai korban. Penyebab utamanya adalah fungsionalitas aplikasi menggunakan tindakan URL/bentuk yang dapat diprediksi dengan cara yang berulang Sebaliknya, skrip lintas situs (XSS) mengeksploitasi kepercayaan yang dimiliki pengguna terhadap situs web. Seperti XSS, serangan CSRF tidak harus bersifat lintas situs, namun bisa juga lintas situs pemalsuan permintaan juga dikenal sebagai CSRF, XSRF, serangan sekali klik, sesi berkendara, deputi bingung, dan selancar laut.\n\nSerangan CSRF efektif dalam sejumlah situasi, termasuk:\n * Korban memiliki sesi aktif di situs target.\n * Korban diautentikasi melalui autentikasi HTTP di situs target.\n * Korban berada di jaringan lokal yang sama dengan situs target.\n\nCSRF terutama digunakan untuk melakukan tindakan terhadap target situs menggunakan hak istimewa korban, namun teknik terbaru telah ditemukan untuk mengungkapkan informasi dengan mendapatkan akses ke respons. Risiko pengungkapan informasi meningkat secara dramatis ketika situs target rentan terhadap XSS, karena XSS dapat digunakan sebagai platform untuk CSRF, yang memungkinkan serangan beroperasi dalam batas-batas kebijakan asal yang sama.",
+            "deskripsi_masalah": " Sedang",
+            "solusi_masalah": "Fase: Arsitektur dan Desain\nGunakan pustaka atau kerangka kerja yang terverifikasi yang tidak membiarkan kelemahan ini terjadi atau menyediakan konstruksi yang membuat kelemahan ini lebih mudah dihindari.\nMisalnya, gunakan paket anti-CSRF seperti OWASP CSRFGuard.\n\nFase: Implementasi\nPastikan aplikasi Anda bebas dari masalah skrip lintas situs, karena sebagian besar pertahanan CSRF dapat dilewati menggunakan skrip yang dikendalikan penyerang.\n\nFase: Arsitektur dan Desain\nBuat nonce unik untuk setiap formulir, tempatkan nonce ke dalam formulir, dan verifikasi nonce setelah menerima formulir. Pastikan bahwa nonce tidak dapat diprediksi (CWE-330).\nPerhatikan bahwa hal ini dapat dilewati menggunakan XSS.\n\nIdentifikasi khususnya operasi berbahaya. Saat pengguna melakukan operasi berbahaya, kirimkan permintaan konfirmasi terpisah untuk memastikan bahwa pengguna bermaksud melakukan operasi tersebut.\nPerhatikan bahwa ini dapat dilewati menggunakan XSS.\n\nGunakan kontrol Manajemen Sesi ESAPI.\nKontrol ini menyertakan komponen untuk CSRF.\n\nJangan gunakan metode GET untuk permintaan apa pun yang memicu perubahan status.\n\nTahap: Implementasi\nPeriksa header HTTP Referer untuk melihat apakah permintaan berasal dari halaman yang diharapkan. Hal ini dapat merusak fungsi yang sah, karena pengguna atau proxy mungkin telah menonaktifkan pengiriman Perujuk karena alasan privasi."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mengurangi jenis serangan tertentu. Termasuk (tetapi tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web untuk menyatakan sumber konten yang disetujui yang seharusnya diizinkan dimuat oleh browser di halaman tersebut \u2014 jenis yang dicakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi dengan benar untuk menyetel header Kebijakan Keamanan Konten."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Content Security Policy (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mengurangi jenis serangan tertentu. Termasuk (tetapi tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web untuk menyatakan sumber konten yang disetujui yang seharusnya diizinkan dimuat oleh browser di halaman tersebut \u2014 jenis yang dicakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi dengan benar untuk menyetel header Content-Security-Policy."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Aplikasi Web Modern",
+            "deskripsi": "Aplikasi tersebut tampaknya merupakan aplikasi web modern. Jika Anda perlu menjelajahinya secara otomatis maka Ajax Spider mungkin lebih efektif daripada yang standar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional sehingga tidak diperlukan perubahan."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Cookie Tanpa Tanda HttpOnly",
+            "deskripsi": "Cookie telah ditetapkan tanpa tanda HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini, maka cookie akan dapat diakses dan dapat ditransmisikan ke situs lain. Jika ini adalah cookie sesi, maka pembajakan sesi dapat terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan tanda HttpOnly ditetapkan untuk semua cookie."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan flag HttpOnly disetel untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah disetel tanpa atribut SameSite, yang berarti cookie dapat dikirim sebagai hasil permintaan 'lintas situs'. Atribut SameSite adalah tindakan balasan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan atribut SameSite disetel ke 'lax' atau idealnya 'ketat' untuk semua cookie."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Aplikasi Web Modern",
+            "deskripsi": "Aplikasi tersebut tampaknya merupakan aplikasi web modern. Jika Anda perlu menjelajahinya secara otomatis maka Ajax Spider mungkin lebih efektif daripada yang standar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional sehingga tidak diperlukan perubahan."
+        },
+        {
+            "nama": "Keracunan Cookie",
+            "deskripsi": "Pemeriksaan ini melihat input yang diberikan pengguna dalam parameter string kueri dan data POST untuk mengidentifikasi di mana parameter cookie mungkin dikontrol. Ini disebut serangan keracunan cookie, dan dapat dieksploitasi ketika penyerang dapat memanipulasi cookie dengan berbagai cara. Dalam beberapa kasus, hal ini tidak dapat dieksploitasi, namun mengizinkan parameter URL untuk menyetel nilai cookie umumnya dianggap sebagai bug.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Jangan izinkan masukan pengguna untuk mengontrol nama dan nilai cookie . Jika beberapa parameter string kueri harus disetel dalam nilai cookie, pastikan untuk memfilter titik koma yang dapat berfungsi sebagai pembatas pasangan nama/nilai."
+        },
+        {
+            "nama": "Perpustakaan JS Rentan",
+            "deskripsi": "Perpustakaan bootstrap yang teridentifikasi, versi 3.3.4 rentan.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Silakan tingkatkan ke versi bootstrap terkini."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respons Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respons yang diberikan telah diidentifikasi berisi token manajemen sesi. Kolom 'Info Lainnya' berisi serangkaian token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang ditetapkan ke \"Deteksi Otomatis\", maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional dan bukan kerentanan, jadi tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respons Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respons yang diberikan telah diidentifikasi berisi token manajemen sesi. Kolom 'Info Lainnya' berisi serangkaian token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang ditetapkan ke \"Deteksi Otomatis\", maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional dan bukan kerentanan, jadi tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Keracunan Cookie",
+            "deskripsi": "Pemeriksaan ini melihat input yang diberikan pengguna dalam parameter string kueri dan data POST untuk mengidentifikasi di mana parameter cookie mungkin dikontrol. Ini disebut serangan keracunan cookie, dan dapat dieksploitasi ketika penyerang dapat memanipulasi cookie dengan berbagai cara. Dalam beberapa kasus, hal ini tidak dapat dieksploitasi, namun mengizinkan parameter URL untuk menyetel nilai cookie umumnya dianggap sebagai bug.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Jangan izinkan masukan pengguna untuk mengontrol nama dan nilai cookie . Jika beberapa parameter string kueri harus disetel dalam nilai cookie, pastikan untuk memfilter titik koma yang dapat berfungsi sebagai pembatas pasangan nama/nilai."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respons Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respons yang diberikan telah diidentifikasi berisi token manajemen sesi. Kolom 'Info Lainnya' berisi serangkaian token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang ditetapkan ke \"Deteksi Otomatis\", maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional dan bukan kerentanan, jadi tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Beberapa Entri Header X-Frame-Options",
+            "deskripsi": "Header X-Frame-Options (XFO) ditemukan, respons dengan beberapa entri header XFO mungkin tidak dapat diprediksi ditangani oleh semua agen pengguna .",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan hanya satu header X-Frame-Options yang ada dalam respons."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Cookie Tanpa Bendera Aman",
+            "deskripsi": "Cookie telah disetel tanpa bendera aman, yang berarti cookie dapat diakses melalui koneksi yang tidak terenkripsi.",
+            "deskripsi_masalah": "Rendah",
+            " solusi_masalah": "Setiap kali cookie berisi informasi sensitif atau merupakan token sesi, maka cookie tersebut harus selalu diteruskan menggunakan saluran terenkripsi. Pastikan tanda aman disetel untuk cookie yang berisi informasi sensitif tersebut."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Tidak Ada Token Anti-CSRF",
+            "deskripsi": "Tidak ada token Anti-CSRF yang ditemukan dalam formulir pengiriman HTML.\nPemalsuan permintaan lintas situs adalah serangan yang melibatkan pemaksaan korban untuk mengirimkan Permintaan HTTP ke tujuan target tanpa sepengetahuan atau niat mereka untuk melakukan tindakan sebagai korban. Penyebab utamanya adalah fungsionalitas aplikasi menggunakan tindakan URL/bentuk yang dapat diprediksi dengan cara yang berulang Sebaliknya, skrip lintas situs (XSS) mengeksploitasi kepercayaan yang dimiliki pengguna terhadap situs web. Seperti XSS, serangan CSRF tidak harus bersifat lintas situs, namun bisa juga lintas situs pemalsuan permintaan juga dikenal sebagai CSRF, XSRF, serangan sekali klik, sesi berkendara, deputi bingung, dan selancar laut.\n\nSerangan CSRF efektif dalam sejumlah situasi, termasuk:\n * Korban memiliki sesi aktif di situs target.\n * Korban diautentikasi melalui autentikasi HTTP di situs target.\n * Korban berada di jaringan lokal yang sama dengan situs target.\n\nCSRF terutama digunakan untuk melakukan tindakan terhadap target situs menggunakan hak istimewa korban, namun teknik terbaru telah ditemukan untuk mengungkapkan informasi dengan mendapatkan akses ke respons. Risiko pengungkapan informasi meningkat secara dramatis ketika situs target rentan terhadap XSS, karena XSS dapat digunakan sebagai platform untuk CSRF, yang memungkinkan serangan beroperasi dalam batas-batas kebijakan asal yang sama.",
+            "deskripsi_masalah": " Sedang",
+            "solusi_masalah": "Fase: Arsitektur dan Desain\nGunakan pustaka atau kerangka kerja yang terverifikasi yang tidak membiarkan kelemahan ini terjadi atau menyediakan konstruksi yang membuat kelemahan ini lebih mudah dihindari.\nMisalnya, gunakan paket anti-CSRF seperti OWASP CSRFGuard.\n\nFase: Implementasi\nPastikan aplikasi Anda bebas dari masalah skrip lintas situs, karena sebagian besar pertahanan CSRF dapat dilewati menggunakan skrip yang dikendalikan penyerang.\n\nFase: Arsitektur dan Desain\nBuat nonce unik untuk setiap formulir, tempatkan nonce ke dalam formulir, dan verifikasi nonce setelah menerima formulir. Pastikan bahwa nonce tidak dapat diprediksi (CWE-330).\nPerhatikan bahwa hal ini dapat dilewati menggunakan XSS.\n\nIdentifikasi khususnya operasi berbahaya. Saat pengguna melakukan operasi berbahaya, kirimkan permintaan konfirmasi terpisah untuk memastikan bahwa pengguna bermaksud melakukan operasi tersebut.\nPerhatikan bahwa ini dapat dilewati menggunakan XSS.\n\nGunakan kontrol Manajemen Sesi ESAPI.\nKontrol ini menyertakan komponen untuk CSRF.\n\nJangan gunakan metode GET untuk permintaan apa pun yang memicu perubahan status.\n\nTahap: Implementasi\nPeriksa header HTTP Referer untuk melihat apakah permintaan berasal dari halaman yang diharapkan. Hal ini dapat merusak fungsi yang sah, karena pengguna atau proxy mungkin telah menonaktifkan pengiriman Perujuk karena alasan privasi."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan MIME-sniffing sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Header Strict-Transport-Security Tidak Ditetapkan",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web yang dengannya server web menyatakan bahwa agen pengguna yang patuh (seperti peramban web) akan berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP yang dilapisi TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditetapkan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport-Security."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Permintaan Otentikasi Teridentifikasi",
+            "deskripsi": "Permintaan yang diberikan telah diidentifikasi sebagai permintaan otentikasi. Bidang 'Info Lainnya' berisi sekumpulan baris key=value yang mengidentifikasi bidang apa pun yang relevan. Jika permintaan berada dalam konteks yang memiliki Metode Otentikasi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah otentikasi agar sesuai dengan permintaan yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini adalah peringatan informasi daripada kerentanan sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Content Security Policy (CSP) Header Not Set",
+            "deskripsi": "Content Security Policy (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mengurangi jenis serangan tertentu, termasuk Cross Site Scripting (XSS) dan serangan injeksi data. Serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau penyebaran malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web untuk menyatakan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 jenis yang dicakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Content-Security-Policy."
+        },
+        {
+            "nama": "Header Strict-Transport-Security Tidak Ditetapkan",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web yang dengannya server web menyatakan bahwa agen pengguna yang patuh (seperti peramban web) akan berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP yang dilapisi TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditetapkan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport-Security."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan MIME-sniffing sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Respons Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respons yang diberikan telah diidentifikasi berisi token manajemen sesi. Kolom 'Info Lainnya' berisi serangkaian token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang ditetapkan ke \"Deteksi Otomatis\", maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional dan bukan kerentanan, jadi tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Beberapa Entri Header X-Frame-Options",
+            "deskripsi": "Header X-Frame-Options (XFO) ditemukan, respons dengan beberapa entri header XFO mungkin tidak dapat diprediksi ditangani oleh semua agen pengguna .",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan hanya satu header X-Frame-Options yang ada dalam respons."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Penyertaan File Sumber JavaScript Lintas-Domain",
+            "deskripsi": "Halaman berisi satu atau lebih file skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": " Pastikan file sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumber tersebut tidak dapat dikontrol oleh pengguna akhir aplikasi."
+        },
+        {
+            "nama": "Tidak Ada Token Anti-CSRF",
+            "deskripsi": "Tidak ada token Anti-CSRF yang ditemukan dalam formulir pengiriman HTML.\nPemalsuan permintaan lintas situs adalah serangan yang melibatkan pemaksaan korban untuk mengirimkan Permintaan HTTP ke tujuan target tanpa sepengetahuan atau niat mereka untuk melakukan tindakan sebagai korban. Penyebab utamanya adalah fungsionalitas aplikasi menggunakan tindakan URL/bentuk yang dapat diprediksi dengan cara yang berulang Sebaliknya, skrip lintas situs (XSS) mengeksploitasi kepercayaan yang dimiliki pengguna terhadap situs web. Seperti XSS, serangan CSRF tidak harus bersifat lintas situs, namun bisa juga lintas situs pemalsuan permintaan juga dikenal sebagai CSRF, XSRF, serangan sekali klik, sesi berkendara, deputi bingung, dan selancar laut.\n\nSerangan CSRF efektif dalam sejumlah situasi, termasuk:\n * Korban memiliki sesi aktif di situs target.\n * Korban diautentikasi melalui autentikasi HTTP di situs target.\n * Korban berada di jaringan lokal yang sama dengan situs target.\n\nCSRF terutama digunakan untuk melakukan tindakan terhadap target situs menggunakan hak istimewa korban, namun teknik terbaru telah ditemukan untuk mengungkapkan informasi dengan mendapatkan akses ke respons. Risiko pengungkapan informasi meningkat secara dramatis ketika situs target rentan terhadap XSS, karena XSS dapat digunakan sebagai platform untuk CSRF, yang memungkinkan serangan beroperasi dalam batas-batas kebijakan asal yang sama.",
+            "deskripsi_masalah": " Sedang",
+            "solusi_masalah": "Fase: Arsitektur dan Desain\nGunakan pustaka atau kerangka kerja yang terverifikasi yang tidak memungkinkan kelemahan ini terjadi atau menyediakan konstruksi yang membuat kelemahan ini lebih mudah dihindari.\nMisalnya, gunakan paket anti-CSRF seperti OWASP CSRFGuard.\n\nFase: Implementasi\nPastikan aplikasi Anda bebas dari masalah skrip lintas situs, karena sebagian besar pertahanan CSRF dapat dilewati menggunakan skrip yang dikendalikan penyerang.\n\nFase: Arsitektur dan Desain\nBuat nonce unik untuk setiap formulir, tempatkan nonce ke dalam formulir, dan verifikasi nonce setelah menerima formulir. Pastikan bahwa nonce tidak dapat diprediksi (CWE-330).\nPerhatikan bahwa hal ini dapat dilewati menggunakan XSS.\n\nIdentifikasi khususnya operasi berbahaya. Saat pengguna melakukan operasi berbahaya, kirimkan permintaan konfirmasi terpisah untuk memastikan bahwa pengguna bermaksud melakukan operasi tersebut.\nPerhatikan bahwa ini dapat dilewati menggunakan XSS.\n\nGunakan kontrol Manajemen Sesi ESAPI.\nKontrol ini menyertakan komponen untuk CSRF.\n\nJangan gunakan metode GET untuk permintaan apa pun yang memicu perubahan status.\n\nTahap: Implementasi\nPeriksa header HTTP Referer untuk melihat apakah permintaan berasal dari halaman yang diharapkan. Hal ini dapat merusak fungsi yang sah, karena pengguna atau proxy mungkin telah menonaktifkan pengiriman Perujuk karena alasan privasi."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi, bukan kerentanan, sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Server Kebocoran Informasi melalui Bidang Header Respons HTTP \"X-Powered-By\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi melalui satu atau lebih \"X-Powered-By\" Header respons HTTP. Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerangka/komponen lain yang diandalkan oleh aplikasi web Anda dan kerentanan yang mungkin dimiliki komponen tersebut.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web Anda, aplikasi server, penyeimbang beban, dll. dikonfigurasi untuk menyembunyikan header \"X-Powered-By\"."
+        },
+        {
+            "nama": "Strict-Transport-Security Header Not Set",
+            "deskripsi": "HTTP Strict Transport Security (HSTS) adalah mekanisme kebijakan keamanan web di mana server web menyatakan bahwa agen pengguna yang mematuhi (seperti browser web) harus berinteraksi dengannya hanya menggunakan koneksi HTTPS yang aman (yaitu HTTP berlapis TLS/SSL). HSTS adalah protokol jalur standar IETF dan ditentukan dalam RFC 6797.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menerapkan Strict-Transport -Keamanan."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Header Anti-clickjacking Hilang",
+            "deskripsi": "Responsnya tidak mencakup Kebijakan Keamanan Konten dengan arahan 'frame-ancestors' atau X-Frame-Options untuk melindungi dari serangan 'ClickJacking'. ",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Browser Web modern mendukung header HTTP Content-Security-Policy dan X-Frame-Options. Pastikan salah satunya disetel di semua halaman web yang ditampilkan oleh situs/aplikasi Anda.\nJika Anda mengharapkan halaman tersebut hanya dibingkai oleh halaman di server Anda (misalnya, itu bagian dari FRAMESET) maka Anda sebaiknya melakukannya gunakan SAMEORIGIN, jika tidak, jika Anda tidak pernah mengharapkan halaman tersebut dibingkai, Anda harus menggunakan DENY. Alternatifnya, pertimbangkan untuk menerapkan arahan \"frame-ancestors\" dari Kebijakan Keamanan Konten."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Tidak Ada Token Anti-CSRF",
+            "deskripsi": "Tidak ada token Anti-CSRF yang ditemukan dalam formulir pengiriman HTML.\nPemalsuan permintaan lintas situs adalah serangan yang melibatkan pemaksaan korban untuk mengirimkan Permintaan HTTP ke tujuan target tanpa sepengetahuan atau niat mereka untuk melakukan tindakan sebagai korban. Penyebab utamanya adalah fungsionalitas aplikasi menggunakan tindakan URL/bentuk yang dapat diprediksi dengan cara yang berulang Sebaliknya, skrip lintas situs (XSS) mengeksploitasi kepercayaan yang dimiliki pengguna terhadap situs web. Seperti XSS, serangan CSRF tidak harus bersifat lintas situs, namun bisa juga lintas situs pemalsuan permintaan juga dikenal sebagai CSRF, XSRF, serangan sekali klik, sesi berkendara, deputi bingung, dan selancar laut.\n\nSerangan CSRF efektif dalam sejumlah situasi, termasuk:\n * Korban memiliki sesi aktif di situs target.\n * Korban diautentikasi melalui autentikasi HTTP di situs target.\n * Korban berada di jaringan lokal yang sama dengan situs target.\n\nCSRF terutama digunakan untuk melakukan tindakan terhadap target situs menggunakan hak istimewa korban, namun teknik terbaru telah ditemukan untuk mengungkapkan informasi dengan mendapatkan akses ke respons. Risiko pengungkapan informasi meningkat secara dramatis ketika situs target rentan terhadap XSS, karena XSS dapat digunakan sebagai platform untuk CSRF, yang memungkinkan serangan beroperasi dalam batas-batas kebijakan asal yang sama.",
+            "deskripsi_masalah": " Sedang",
+            "solusi_masalah": "Fase: Arsitektur dan Desain\nGunakan pustaka atau kerangka kerja yang terverifikasi yang tidak memungkinkan kelemahan ini terjadi atau menyediakan konstruksi yang membuat kelemahan ini lebih mudah dihindari.\nMisalnya, gunakan paket anti-CSRF seperti OWASP CSRFGuard.\n\nFase: Implementasi\nPastikan aplikasi Anda bebas dari masalah skrip lintas situs, karena sebagian besar pertahanan CSRF dapat dilewati menggunakan skrip yang dikendalikan penyerang.\n\nFase: Arsitektur dan Desain\nBuat nonce unik untuk setiap formulir, tempatkan nonce ke dalam formulir, dan verifikasi nonce setelah menerima formulir. Pastikan bahwa nonce tidak dapat diprediksi (CWE-330).\nPerhatikan bahwa hal ini dapat dilewati menggunakan XSS.\n\nIdentifikasi khususnya operasi berbahaya. Saat pengguna melakukan operasi berbahaya, kirimkan permintaan konfirmasi terpisah untuk memastikan bahwa pengguna bermaksud melakukan operasi tersebut.\nPerhatikan bahwa ini dapat dilewati menggunakan XSS.\n\nGunakan kontrol Manajemen Sesi ESAPI.\nKontrol ini menyertakan komponen untuk CSRF.\n\nJangan gunakan metode GET untuk permintaan apa pun yang memicu perubahan status.\n\nTahap: Implementasi\nPeriksa header HTTP Referer untuk melihat apakah permintaan berasal dari halaman yang diharapkan. Hal ini dapat merusak fungsi yang sah, karena pengguna atau proxy mungkin telah menonaktifkan pengiriman Perujuk karena alasan privasi."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Respons tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Kecocokan yang dibuat dalam blok skrip atau file bertentangan dengan keseluruhan konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Hapus semua komentar yang mengembalikan informasi yang dapat membantu penyerang dan memperbaiki masalah mendasar apa pun yang mereka alami. mengacu pada."
+        },
+        {
+            "nama": "Aplikasi Web Modern",
+            "deskripsi": "Aplikasi tersebut tampaknya merupakan aplikasi web modern. Jika Anda perlu menjelajahinya secara otomatis maka Ajax Spider mungkin lebih efektif daripada yang standar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional sehingga tidak diperlukan perubahan."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Permintaan Otentikasi Teridentifikasi",
+            "deskripsi": "Permintaan yang diberikan telah diidentifikasi sebagai permintaan otentikasi. Bidang 'Info Lainnya' berisi sekumpulan baris key=value yang mengidentifikasi bidang apa pun yang relevan. Jika permintaan berada dalam konteks yang memiliki Metode Otentikasi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah otentikasi agar sesuai dengan permintaan yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini adalah peringatan informasi daripada kerentanan sehingga tidak ada yang perlu diperbaiki."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Tanggapan tersebut tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Pencocokan yang dilakukan dalam blok skrip atau file ditujukan terhadap seluruh konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Hapus semua komentar yang memberikan informasi yang dapat membantu penyerang dan perbaiki masalah mendasar yang dirujuknya."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Respons tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Kecocokan yang dibuat dalam blok skrip atau file bertentangan dengan keseluruhan konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Hapus semua komentar yang mengembalikan informasi yang dapat membantu penyerang dan memperbaiki masalah mendasar apa pun yang mereka alami. mengacu pada."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Respons tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Kecocokan yang dibuat dalam blok skrip atau file bertentangan dengan keseluruhan konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Hapus semua komentar yang mengembalikan informasi yang dapat membantu penyerang dan memperbaiki masalah mendasar apa pun yang mereka alami. mengacu pada."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Respons tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Kecocokan yang dibuat dalam blok skrip atau file bertentangan dengan keseluruhan konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Hapus semua komentar yang mengembalikan informasi yang dapat membantu penyerang dan memperbaiki masalah mendasar apa pun yang mereka alami. mengacu pada."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan MIME-sniffing sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan sniffing MIME sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Pengungkapan Informasi - Komentar Mencurigakan",
+            "deskripsi": "Respons tampaknya berisi komentar mencurigakan yang dapat membantu penyerang. Catatan: Kecocokan yang dibuat dalam blok skrip atau file bertentangan dengan keseluruhan konten, bukan hanya komentar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Hapus semua komentar yang mengembalikan informasi yang dapat membantu penyerang dan memperbaiki masalah mendasar apa pun yang mereka alami. mengacu pada."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Server Membocorkan Informasi Versi melalui Kolom Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dialami server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menekan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Header Anti-clickjacking Hilang",
+            "deskripsi": "Responsnya tidak mencakup Kebijakan Keamanan Konten dengan arahan 'frame-ancestors' atau X-Frame-Options untuk melindungi dari serangan 'ClickJacking'. ",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Browser Web modern mendukung header HTTP Content-Security-Policy dan X-Frame-Options. Pastikan salah satunya disetel di semua halaman web yang ditampilkan oleh situs/aplikasi Anda.\nJika Anda mengharapkan halaman tersebut hanya dibingkai oleh halaman di server Anda (misalnya, itu bagian dari FRAMESET) maka Anda sebaiknya melakukannya gunakan SAMEORIGIN, jika tidak, jika Anda tidak pernah mengharapkan halaman tersebut dibingkai, Anda harus menggunakan DENY. Alternatifnya, pertimbangkan untuk menerapkan arahan \"frame-ancestors\" dari Kebijakan Keamanan Konten."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Aplikasi Web Modern",
+            "deskripsi": "Aplikasi tersebut tampaknya merupakan aplikasi web modern. Jika Anda perlu menjelajahinya secara otomatis maka Ajax Spider mungkin lebih efektif daripada yang standar.",
+            "deskripsi_masalah": "Informasional",
+            "solusi_masalah": "Ini adalah peringatan informasional sehingga tidak diperlukan perubahan."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "X-Content-Type-Options Header Hilang",
+            "deskripsi": "Header Anti-MIME-Sniffing X-Content-Type-Options tidak disetel ke 'nosniff'. Ini memungkinkan versi Internet yang lebih lama Explorer dan Chrome melakukan MIME-sniffing pada isi respons, yang berpotensi menyebabkan isi respons ditafsirkan dan ditampilkan sebagai tipe konten selain tipe konten yang dideklarasikan. Versi Firefox saat ini (awal 2014) dan lawas akan menggunakan tipe konten yang dideklarasikan (jika ada yang disetel), daripada melakukan sniffing MIME.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan aplikasi/server web menyetel header Tipe-Konten dengan tepat, dan menyetel X -Content-Type-Options header ke 'nosniff' untuk semua halaman web.\nJika memungkinkan, pastikan bahwa pengguna akhir menggunakan browser web modern dan sesuai standar yang tidak melakukan MIME-sniffing sama sekali, atau dapat diarahkan oleh aplikasi web/server web agar tidak melakukan MIME-sniffing."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        },
+        {
+            "nama": "Header Kebijakan Keamanan Konten (CSP) Tidak Disetel",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu, termasuk Cross Site Scripting ( XSS) dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda dikonfigurasi untuk menyetel header Kebijakan-Keamanan-Konten."
+        },
+        {
+            "nama": "Informasi Versi Kebocoran Server melalui Bidang Header Respons HTTP \"Server\"",
+            "deskripsi": "Server web/aplikasi membocorkan informasi versi melalui header respons HTTP \"Server\". Akses ke informasi tersebut dapat memudahkan penyerang mengidentifikasi kerentanan lain yang dimiliki server web/aplikasi Anda.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dll. Anda telah dikonfigurasi untuk menyembunyikan header \"Server\" atau memberikan detail umum."
+        }
+    ]
+}

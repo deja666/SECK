@@ -1,0 +1,63 @@
+	<!-- [ navigation menu ] start -->
+	<nav class="pc-sidebar ">
+		<div class="navbar-wrapper">
+			<div class="m-header">
+				<a href="index.html" class="b-brand">
+					<!-- ========  change your logo here ============ -->
+					<img src="/static/logo.svg" alt="" class="logo logo-lg">
+					<img src="/static/logo-sm.svg" alt="" class="logo logo-sm">
+				</a>
+			</div>
+			<div class="navbar-content">
+				<ul class="pc-navbar">
+					{% if role == 'operator' %}
+					<li class="pc-item">
+						<a href="/operator/dashboard" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Dashboard</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>Recon</label>
+					</li>
+					<li class="pc-item">
+						<a href="/viewDomain" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Pengintaian Domain</span></a>
+					</li>
+					<li class="pc-item">
+						<a href="/viewTech" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Pengintaian Teknologi</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>Scanning</label>
+					</li>
+					<li class="pc-item">
+						<a href="/viewPort" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Pemindaian Port</span></a>
+					</li>
+					<li class="pc-item">
+						<a href="/viewVuln" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Pemindaian Kerentan</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>Exploit</label>
+					</li>
+					<li class="pc-item">
+						<a href="/viewEksploit" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Data Eksploitasi</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>Post-Exploit</label>
+					</li>
+					<li class="pc-item">
+						<a href="/viewScore" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Penilaian Kerentanan</span></a>
+					</li>
+					{% endif %}
+					{% if role == 'admin' %}
+					<li class="pc-item">
+						<a href="/admin/dashboard" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Dashboard</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>Manajemen User</label>
+					</li>
+					<li class="pc-item">
+						<a href="/admin/manageUser" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Manajemen User</span></a>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->

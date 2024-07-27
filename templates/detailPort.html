@@ -1,0 +1,80 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} WHOIS Detail {% endblock title %}
+
+{% block stylesheets %}
+<!-- Include any specific CSS for this page -->
+{% endblock stylesheets %}
+{% block content %}
+<!-- Main Content -->
+<section class="pc-container">
+    <div class="pcoded-content">
+        <!-- Breadcrumb -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Scanning</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/viewPort">Scanning</a></li>
+                            <li class="breadcrumb-item active">Detail Pemindaian Port</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <!-- Main Content -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body table-border-style">
+                        <div class="table-responsive"></div>
+                        {% for result in results %}
+                        <h2>Host: {{ result.hostname }}</h2>
+                        <p>State: {{ result.state }}</p>
+                        <table class="table">
+                            <tr>
+                                <th>Port</th>
+                                <th>Service Name</th>
+                                <th>Product</th>
+                                <th>Version</th>
+                                <th>Vulnerabilities</th>
+                            </tr>
+                            <tr>
+                                <td>{{ result.port }}</td>
+                                <td>{{ result.service_name }}</td>
+                                <td>{{ result.product }}</td>
+                                <td>{{ result.version }}</td>
+                                <td>
+                                    {% if result.vulners %}
+                                        <ul>
+                                            {% for vuln in result.vulners %}
+                                                <li>{{ vuln.id }} - {{ vuln.description }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        Tidak Ada Kerentanan
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        </table>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+    </div>
+</section>
+<!-- End Main Content -->
+{% endblock content %}
+
+{% block javascripts %}
+<!-- Include any specific JS for this page -->
+{% endblock javascripts %}
+

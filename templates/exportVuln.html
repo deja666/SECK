@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAP Scanning Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .divide{
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            text-align: center;
+        }
+        .summary table, .alert table {
+            width: 30%;
+            border-collapse: collapse;
+        }
+        .summary th, .summary td, .alert th, .alert td {
+            border: 2px solid #ffffff;
+            padding: 5px;
+            text-align: left;
+        }
+        .risk-tinggi {
+            background-color: red;
+            color: white;
+        }
+        .risk-sedang {
+            background-color: orange;
+            color: white;
+        }
+        .risk-rendah {
+            background-color: yellow;
+        }
+        .risk-informasional, .risk-informasi {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header divide">
+        <h1>ZAP Scanning Report</h1>
+        <h3 style="text-align: center;">Site: {{ target }}</h3>
+        <h3 style="text-align: center;">Generated on: {{ dt }}</h3>
+    </div>
+    <div class="summary divide">
+        <h2>Summary of Alerts</h2>
+        <table>
+            <tr>
+                <th style="background-color: #737373; width: 20%;">Tingkat Kerentanan</th>
+                <th style="background-color: #737373; width: 20%;">Jumlah Kerentanan</th>
+            </tr>
+            <tr>
+                <td class="risk-tinggi">Tinggi</td>
+                <td style="background-color: #c6c6c6;">{{ high }}</td>
+            </tr>
+            <tr>
+                <td class="risk-sedang">Sedang</td>
+                <td style="background-color: #c6c6c6;">{{ medium }}</td>
+            </tr>
+            <tr>
+                <td class="risk-rendah">Rendah</td>
+                <td style="background-color: #c6c6c6;">{{ low }}</td>
+            </tr>
+            <tr>
+                <td class="risk-informasional">Informational</td>
+                <td style="background-color: #c6c6c6;">{{ info }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="alerts">
+        <h2>Kerentanan</h2>
+        {% for alert in vuln %}
+        <div class="alert divide">
+            <table style="width: 100%;">
+                <tr class="risk-{{ alert["deskripsi_masalah"].lower() }}">
+                    <th style="width: 25%;">Tingkat Kerentanan {{ alert["deskripsi_masalah"] }}</th>
+                    <th>{{ alert["nama"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">URL:</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["url"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">Indikasi Kerentanan:</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["evidence"] }} {{ alert["bukti"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">Deskripsi Kerentanan</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["deskripsi"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">Solusi Kerentanan</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["solusi_masalah"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">CWE</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["cweid"] }}</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #c6c6c6;">Referensi</th>
+                    <td style="background-color: #c6c6c6;">{{ alert["referensi"] }} {{ alert["reference"] }}</th>
+                </tr>
+            </table>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

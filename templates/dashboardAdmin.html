@@ -1,0 +1,214 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.css">
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+        <div class="pcoded-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="page-header-title">
+                                <h5 class="m-b-10">Dashboard</h5>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item">Dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+            <!-- [ Main Content ] start -->
+            <div class="row">
+                <!-- support-section start -->
+                <div class="col-xl-12 col-md-12">
+                    <div class="card flat-card">
+                        <div class="row-table">
+                            <div class="col-sm-6 card-body br">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">group</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_user }}</h5>
+                                        <span>Total User</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 d-none d-md-table-cell d-lg-table-cell d-xl-table-cell card-body br">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">language</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_pengintaian_domain }}</h5>
+                                        <span>Total Pengintaian Domain</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">unarchive</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_pengintaian_tech }}</h5>
+                                        <span>Total Pengintaian Teknologi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-table">
+                            <div class="col-sm-6 card-body br">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">swap_horizontal_circle</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_pemindaian_port }}</h5>
+                                        <span>Total Pemindaian Port</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 d-none d-md-table-cell d-lg-table-cell d-xl-table-cell card-body br">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">cloud_download</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_pemindaian_kerentanan }}</h5>
+                                        <span>Total Pemindaian kerentanan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">shopping_cart</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_eksploit }}</h5>
+                                        <span>Total Eksploitasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <i class="material-icons-two-tone text-primary mb-1">shopping_cart</i>
+                                    </div>
+                                    <div class="col-sm-8 text-md-center">
+                                        <h5>{{ total_penilaian_kerentanan }}</h5>
+                                        <span>Total Penilaian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Grafik Aktivitas Operator</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- support-section end -->
+                
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.min.js"></script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var options = {
+            series: [{
+                name: 'Total Pengintaian Domain',
+                data: [{{ total_pengintaian_domain }}]
+            }, {
+                name: 'Total Pengintaian Tech',
+                data: [{{ total_pengintaian_tech }}]
+            }, {
+                name: 'Total Pemindaian Port',
+                data: [{{ total_pemindaian_port }}]
+            }, {
+                name: 'Total Pemindaian Kerentanan',
+                data: [{{ total_pemindaian_kerentanan }}]
+            }, {
+                name: 'Total Eksploit',
+                data: [{{ total_eksploit }}]
+            }, {
+                name: 'Total Penilaian Kerentanan',
+                data: [{{ total_penilaian_kerentanan }}]
+            }],
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: ['Total Pengintaian Domain', 'Total Pengintaian Tech', 'Total Pemindaian Port', 'Total Pemindaian Kerentanan', 'Total Eksploit', 'Total Penilaian Kerentanan'],
+            },
+            yaxis: {
+                title: {
+                    text: 'Total'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    });
+</script>
+
+    <script src="/static/js/plugins/apexcharts.min.js"></script>
+    <script src="/static/js/pages/dashboard-sale.js"></script>
+
+    
+
+{% endblock javascripts %}

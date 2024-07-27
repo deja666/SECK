@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Mon Jul 15 11:51:50 2024 as: nmap -oX - -sV -&#45;script vulners ksupostra.id -->
+<nmaprun scanner="nmap" args="nmap -oX - -sV -&#45;script vulners ksupostra.id" start="1721019110" startstr="Mon Jul 15 11:51:50 2024" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3006,3011,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5985-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="194.163.42.70" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ksupostra.id" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1721019111" endtime="1721019210"><status state="up" reason="echo-reply" reason_ttl="50"/>
+<address addr="194.163.42.70" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ksupostra.id" type="user"/>
+<hostname name="srv140.niagahoster.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="955">
+<extrareasons reason="no-response" count="955" proto="tcp" ports="1,3-4,6-7,9,13,17,19,22-25,30,32-33,37,42-43,49,53,70,79,81-85,88-90,99-100,106,109,111,113,119,125,135,139,144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,444-445,458,464,481,497,500,512-515,524,541,543-545,548,554-555,563,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3006,3011,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5985-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+</extraports>
+<extraports state="closed" count="35">
+<extrareasons reason="reset" count="35" proto="tcp" ports="20,26,783,2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="48"/><service name="http" product="LiteSpeed" servicefp="SF-Port80-TCP:V=7.95%I=7%D=7/15%Time=6694AAF1%P=i686-pc-windows-windows%r(GetRequest,4A4,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ncontent-length:\x20771\r\ndate:\x20Mon,\x2015\x20Jul\x202024\x2004:52:02\x20GMT\r\nserver:\x20LiteSpeed\r\ncache-control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20max-age=0\r\nlocation:\x20https://ups-error\.com\r\nplatform:\x20hostinger\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\nvary:\x20User-Agent\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20style=\&quot;height:100%\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;\x20/&gt;\n&lt;title&gt;\x20302\x20Found\r\n&lt;/title&gt;&lt;style&gt;@media\x20\(prefers-color-scheme:dark\){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-color:\x20#fff;\&quot;&gt;\n&lt;div\x20style=\&quot;height:auto;\x20min-height:100%;\x20\&quot;&gt;\x20\x20\x20\x20\x20&lt;div\x20style=\&quot;text-align:\x20center;\x20width:800px;\x20&quot;)%r(HTTPOptions,4A4,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ncontent-length:\x20771\r\ndate:\x20Mon,\x2015\x20Jul\x202024\x2004:52:02\x20GMT\r\nserver:\x20LiteSpeed\r\ncache-control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20max-age=0\r\nlocation:\x20https://ups-error\.com\r\nplatform:\x20hostinger\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\nvary:\x20User-Agent\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20style=\&quot;height:100%\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;\x20/&gt;\n&lt;title&gt;\x20302\x20Found\r\n&lt;/title&gt;&lt;style&gt;@media\x20\(prefers-color-scheme:dark\){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-color:\x20#fff;\&quot;&gt;\n&lt;div\x20style=\&quot;height:auto;\x20min-height:100%;\x20\&quot;&gt;\x20\x20\x20\x20\x20&lt;div\x20style=\&quot;text-align:\x20center;\x20width:800px;\x20&quot;);" method="probed" conf="10"/><script id="http-server-header" output="LiteSpeed"><elem>LiteSpeed</elem>
+</script><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    content-type: text/html&#xa;    content-length: 771&#xa;    date: Mon, 15 Jul 2024 04:52:02 GMT&#xa;    server: LiteSpeed&#xa;    cache-control: no-cache, no-store, must-revalidate, max-age=0&#xa;    location: https://ups-error.com&#xa;    platform: hostinger&#xa;    strict-transport-security: max-age=31536000; includeSubDomains; preload&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    vary: User-Agent&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html style=&quot;height:100%&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&#xa;    &lt;title&gt; 302 Found&#xa;    &lt;/title&gt;&lt;style&gt;@media (prefers-color-scheme:dark){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;&#xa;    &lt;body style=&quot;color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;&quot;&gt;&#xa;    &lt;div style=&quot;height:auto; min-height:100%; &quot;&gt; &lt;div style=&quot;text-align: center; width:800px;"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    content-type: text/html&#xa;    content-length: 771&#xa;    date: Mon, 15 Jul 2024 04:52:02 GMT&#xa;    server: LiteSpeed&#xa;    cache-control: no-cache, no-store, must-revalidate, max-age=0&#xa;    location: https://ups-error.com&#xa;    platform: hostinger&#xa;    strict-transport-security: max-age=31536000; includeSubDomains; preload&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    vary: User-Agent&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html style=&quot;height:100%&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&#xa;    &lt;title&gt; 302 Found&#xa;    &lt;/title&gt;&lt;style&gt;@media (prefers-color-scheme:dark){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;&#xa;    &lt;body style=&quot;color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;&quot;&gt;&#xa;    &lt;div style=&quot;height:auto; min-height:100%; &quot;&gt; &lt;div style=&quot;text-align: center; width:800px;</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="https" product="LiteSpeed" servicefp="SF-Port443-TCP:V=7.95%T=SSL%I=7%D=7/15%Time=6694AAF8%P=i686-pc-windows-windows%r(GetRequest,4A4,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ncontent-length:\x20771\r\ndate:\x20Mon,\x2015\x20Jul\x202024\x2004:52:10\x20GMT\r\nserver:\x20LiteSpeed\r\ncache-control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20max-age=0\r\nlocation:\x20https://ups-error\.com\r\nplatform:\x20hostinger\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\nvary:\x20User-Agent\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20style=\&quot;height:100%\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;\x20/&gt;\n&lt;title&gt;\x20302\x20Found\r\n&lt;/title&gt;&lt;style&gt;@media\x20\(prefers-color-scheme:dark\){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-color:\x20#fff;\&quot;&gt;\n&lt;div\x20style=\&quot;height:auto;\x20min-height:100%;\x20\&quot;&gt;\x20\x20\x20\x20\x20&lt;div\x20style=\&quot;text-align:\x20center;\x20width:800px;\x20&quot;)%r(HTTPOptions,4A4,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ncontent-length:\x20771\r\ndate:\x20Mon,\x2015\x20Jul\x202024\x2004:52:10\x20GMT\r\nserver:\x20LiteSpeed\r\ncache-control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20max-age=0\r\nlocation:\x20https://ups-error\.com\r\nplatform:\x20hostinger\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\nvary:\x20User-Agent\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20style=\&quot;height:100%\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;\x20/&gt;\n&lt;title&gt;\x20302\x20Found\r\n&lt;/title&gt;&lt;style&gt;@media\x20\(prefers-color-scheme:dark\){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-color:\x20#fff;\&quot;&gt;\n&lt;div\x20style=\&quot;height:auto;\x20min-height:100%;\x20\&quot;&gt;\x20\x20\x20\x20\x20&lt;div\x20style=\&quot;text-align:\x20center;\x20width:800px;\x20&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="http-server-header" output="LiteSpeed"><elem>LiteSpeed</elem>
+</script><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    content-type: text/html&#xa;    content-length: 771&#xa;    date: Mon, 15 Jul 2024 04:52:10 GMT&#xa;    server: LiteSpeed&#xa;    cache-control: no-cache, no-store, must-revalidate, max-age=0&#xa;    location: https://ups-error.com&#xa;    platform: hostinger&#xa;    strict-transport-security: max-age=31536000; includeSubDomains; preload&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    vary: User-Agent&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html style=&quot;height:100%&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&#xa;    &lt;title&gt; 302 Found&#xa;    &lt;/title&gt;&lt;style&gt;@media (prefers-color-scheme:dark){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;&#xa;    &lt;body style=&quot;color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;&quot;&gt;&#xa;    &lt;div style=&quot;height:auto; min-height:100%; &quot;&gt; &lt;div style=&quot;text-align: center; width:800px;"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    content-type: text/html&#xa;    content-length: 771&#xa;    date: Mon, 15 Jul 2024 04:52:10 GMT&#xa;    server: LiteSpeed&#xa;    cache-control: no-cache, no-store, must-revalidate, max-age=0&#xa;    location: https://ups-error.com&#xa;    platform: hostinger&#xa;    strict-transport-security: max-age=31536000; includeSubDomains; preload&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    vary: User-Agent&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html style=&quot;height:100%&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&#xa;    &lt;title&gt; 302 Found&#xa;    &lt;/title&gt;&lt;style&gt;@media (prefers-color-scheme:dark){body{background-color:#000!important}}&lt;/style&gt;&lt;/head&gt;&#xa;    &lt;body style=&quot;color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;&quot;&gt;&#xa;    &lt;div style=&quot;height:auto; min-height:100%; &quot;&gt; &lt;div style=&quot;text-align: center; width:800px;</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="srv140.niagahoster.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="srv140.niagahoster.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="mysql" product="MariaDB" version="5.5.5-10.6.18" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb:5.5.5-10.6.18</cpe></service><script id="vulners" output="&#xa;  MariaDB 5.5.5-10.6.18: &#xa;    &#x9;SSV:92513&#x9;10.0&#x9;https://vulners.com/seebug/SSV:92513&#x9;*EXPLOIT*&#xa;    &#x9;SSV:92510&#x9;10.0&#x9;https://vulners.com/seebug/SSV:92510&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:139491&#x9;10.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:139491&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:139476&#x9;10.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:139476&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:55F22FE44A0D6F3F9005C334804B2317&#x9;10.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:55F22FE44A0D6F3F9005C334804B2317&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:3D8D46697DAADEA8249E37B2A2F09AE3&#x9;10.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:3D8D46697DAADEA8249E37B2A2F09AE3&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2012-2750&#x9;10.0&#x9;https://vulners.com/cve/CVE-2012-2750&#xa;    &#x9;CVE-2016-9843&#x9;9.8&#x9;https://vulners.com/cve/CVE-2016-9843&#xa;    &#x9;CVE-2012-3163&#x9;9.0&#x9;https://vulners.com/cve/CVE-2012-3163&#xa;    &#x9;CVE-2017-15365&#x9;8.8&#x9;https://vulners.com/cve/CVE-2017-15365&#xa;    &#x9;CVE-2022-24052&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-24052&#xa;    &#x9;CVE-2022-24051&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-24051&#xa;    &#x9;CVE-2022-24050&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-24050&#xa;    &#x9;CVE-2022-24048&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-24048&#xa;    &#x9;CVE-2017-15945&#x9;7.8&#x9;https://vulners.com/cve/CVE-2017-15945&#xa;    &#x9;CVE-2015-2325&#x9;7.8&#x9;https://vulners.com/cve/CVE-2015-2325&#xa;    &#x9;CVE-2018-2755&#x9;7.7&#x9;https://vulners.com/cve/CVE-2018-2755&#xa;    &#x9;CVE-2017-3309&#x9;7.7&#x9;https://vulners.com/cve/CVE-2017-3309&#xa;    &#x9;CVE-2017-3308&#x9;7.7&#x9;https://vulners.com/cve/CVE-2017-3308&#xa;    &#x9;CVE-2023-5157&#x9;7.5&#x9;https://vulners.com/cve/CVE-2023-5157&#xa;    &#x9;CVE-2022-27449&#x9;7.5&#x9;https://vulners.com/cve/CVE-2022-27449&#xa;    &#x9;CVE-2022-27385&#x9;7.5&#x9;https://vulners.com/cve/CVE-2022-27385&#xa;    &#x9;CVE-2021-46669&#x9;7.5&#x9;https://vulners.com/cve/CVE-2021-46669&#xa;    &#x9;CVE-2017-3302&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3302&#xa;    &#x9;CVE-2016-3471&#x9;7.5&#x9;https://vulners.com/cve/CVE-2016-3471&#xa;    &#x9;CVE-2015-0411&#x9;7.5&#x9;https://vulners.com/cve/CVE-2015-0411&#xa;    &#x9;CVE-2014-6500&#x9;7.5&#x9;https://vulners.com/cve/CVE-2014-6500&#xa;    &#x9;CVE-2014-6491&#x9;7.5&#x9;https://vulners.com/cve/CVE-2014-6491&#xa;    &#x9;CVE-2014-0001&#x9;7.5&#x9;https://vulners.com/cve/CVE-2014-0001&#xa;    &#x9;CVE-2012-3158&#x9;7.5&#x9;https://vulners.com/cve/CVE-2012-3158&#xa;    &#x9;CVE-2021-2144&#x9;7.2&#x9;https://vulners.com/cve/CVE-2021-2144&#xa;    &#x9;CVE-2015-4819&#x9;7.2&#x9;https://vulners.com/cve/CVE-2015-4819&#xa;    &#x9;CVE-2018-2562&#x9;7.1&#x9;https://vulners.com/cve/CVE-2018-2562&#xa;    &#x9;EDB-ID:40679&#x9;7.0&#x9;https://vulners.com/exploitdb/EDB-ID:40679&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:40678&#x9;7.0&#x9;https://vulners.com/exploitdb/EDB-ID:40678&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-28912&#x9;7.0&#x9;https://vulners.com/cve/CVE-2020-28912&#xa;    &#x9;CVE-2016-6664&#x9;7.0&#x9;https://vulners.com/cve/CVE-2016-6664&#xa;    &#x9;1337DAY-ID-26205&#x9;6.9&#x9;https://vulners.com/zdt/1337DAY-ID-26205&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2014-6469&#x9;6.8&#x9;https://vulners.com/cve/CVE-2014-6469&#xa;    &#x9;CVE-2013-0389&#x9;6.8&#x9;https://vulners.com/cve/CVE-2013-0389&#xa;    &#x9;CVE-2013-0386&#x9;6.8&#x9;https://vulners.com/cve/CVE-2013-0386&#xa;    &#x9;CVE-2013-0384&#x9;6.8&#x9;https://vulners.com/cve/CVE-2013-0384&#xa;    &#x9;CVE-2012-5060&#x9;6.8&#x9;https://vulners.com/cve/CVE-2012-5060&#xa;    &#x9;CVE-2012-3177&#x9;6.8&#x9;https://vulners.com/cve/CVE-2012-3177&#xa;    &#x9;CVE-2012-1735&#x9;6.8&#x9;https://vulners.com/cve/CVE-2012-1735&#xa;    &#x9;CVE-2012-1703&#x9;6.8&#x9;https://vulners.com/cve/CVE-2012-1703&#xa;    &#x9;CVE-2017-3312&#x9;6.7&#x9;https://vulners.com/cve/CVE-2017-3312&#xa;    &#x9;CVE-2017-3600&#x9;6.6&#x9;https://vulners.com/cve/CVE-2017-3600&#xa;    &#x9;CVE-2013-0385&#x9;6.6&#x9;https://vulners.com/cve/CVE-2013-0385&#xa;    &#x9;PACKETSTORM:118551&#x9;6.5&#x9;https://vulners.com/packetstorm/PACKETSTORM:118551&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-2780&#x9;6.5&#x9;https://vulners.com/cve/CVE-2020-2780&#xa;    &#x9;CVE-2019-2974&#x9;6.5&#x9;https://vulners.com/cve/CVE-2019-2974&#xa;    &#x9;CVE-2019-2805&#x9;6.5&#x9;https://vulners.com/cve/CVE-2019-2805&#xa;    &#x9;CVE-2019-2740&#x9;6.5&#x9;https://vulners.com/cve/CVE-2019-2740&#xa;    &#x9;CVE-2019-2529&#x9;6.5&#x9;https://vulners.com/cve/CVE-2019-2529&#xa;    &#x9;CVE-2019-2455&#x9;6.5&#x9;https://vulners.com/cve/CVE-2019-2455&#xa;    &#x9;CVE-2018-3133&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-3133&#xa;    &#x9;CVE-2018-2819&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2819&#xa;    &#x9;CVE-2018-2817&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2817&#xa;    &#x9;CVE-2018-2668&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2668&#xa;    &#x9;CVE-2018-2665&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2665&#xa;    &#x9;CVE-2018-2640&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2640&#xa;    &#x9;CVE-2018-2622&#x9;6.5&#x9;https://vulners.com/cve/CVE-2018-2622&#xa;    &#x9;CVE-2017-3453&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-3453&#xa;    &#x9;CVE-2017-3258&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-3258&#xa;    &#x9;CVE-2017-3244&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-3244&#xa;    &#x9;CVE-2017-3238&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-3238&#xa;    &#x9;CVE-2017-10384&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-10384&#xa;    &#x9;CVE-2017-10379&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-10379&#xa;    &#x9;CVE-2017-10378&#x9;6.5&#x9;https://vulners.com/cve/CVE-2017-10378&#xa;    &#x9;CVE-2016-5626&#x9;6.5&#x9;https://vulners.com/cve/CVE-2016-5626&#xa;    &#x9;CVE-2016-5624&#x9;6.5&#x9;https://vulners.com/cve/CVE-2016-5624&#xa;    &#x9;CVE-2016-5612&#x9;6.5&#x9;https://vulners.com/cve/CVE-2016-5612&#xa;    &#x9;CVE-2016-3492&#x9;6.5&#x9;https://vulners.com/cve/CVE-2016-3492&#xa;    &#x9;CVE-2016-0502&#x9;6.5&#x9;https://vulners.com/cve/CVE-2016-0502&#xa;    &#x9;CVE-2014-6555&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-6555&#xa;    &#x9;CVE-2014-6530&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-6530&#xa;    &#x9;CVE-2014-4258&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-4258&#xa;    &#x9;CVE-2014-2436&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-2436&#xa;    &#x9;CVE-2013-2378&#x9;6.5&#x9;https://vulners.com/cve/CVE-2013-2378&#xa;    &#x9;CVE-2013-2375&#x9;6.5&#x9;https://vulners.com/cve/CVE-2013-2375&#xa;    &#x9;CVE-2013-1552&#x9;6.5&#x9;https://vulners.com/cve/CVE-2013-1552&#xa;    &#x9;CVE-2013-1531&#x9;6.5&#x9;https://vulners.com/cve/CVE-2013-1531&#xa;    &#x9;CVE-2013-1521&#x9;6.5&#x9;https://vulners.com/cve/CVE-2013-1521&#xa;    &#x9;CVE-2012-5612&#x9;6.5&#x9;https://vulners.com/cve/CVE-2012-5612&#xa;    &#x9;CVE-2019-2503&#x9;6.4&#x9;https://vulners.com/cve/CVE-2019-2503&#xa;    &#x9;CVE-2017-3291&#x9;6.3&#x9;https://vulners.com/cve/CVE-2017-3291&#xa;    &#x9;CVE-2021-2011&#x9;5.9&#x9;https://vulners.com/cve/CVE-2021-2011&#xa;    &#x9;CVE-2020-2574&#x9;5.9&#x9;https://vulners.com/cve/CVE-2020-2574&#xa;    &#x9;CVE-2018-2761&#x9;5.9&#x9;https://vulners.com/cve/CVE-2018-2761&#xa;    &#x9;CVE-2015-7744&#x9;5.9&#x9;https://vulners.com/cve/CVE-2015-7744&#xa;    &#x9;CVE-2015-3152&#x9;5.9&#x9;https://vulners.com/cve/CVE-2015-3152&#xa;    &#x9;CVE-2015-0501&#x9;5.7&#x9;https://vulners.com/cve/CVE-2015-0501&#xa;    &#x9;CVE-2017-3265&#x9;5.6&#x9;https://vulners.com/cve/CVE-2017-3265&#xa;    &#x9;CVE-2022-31624&#x9;5.5&#x9;https://vulners.com/cve/CVE-2022-31624&#xa;    &#x9;CVE-2022-31623&#x9;5.5&#x9;https://vulners.com/cve/CVE-2022-31623&#xa;    &#x9;CVE-2022-31622&#x9;5.5&#x9;https://vulners.com/cve/CVE-2022-31622&#xa;    &#x9;CVE-2022-31621&#x9;5.5&#x9;https://vulners.com/cve/CVE-2022-31621&#xa;    &#x9;CVE-2021-46667&#x9;5.5&#x9;https://vulners.com/cve/CVE-2021-46667&#xa;    &#x9;CVE-2021-46666&#x9;5.5&#x9;https://vulners.com/cve/CVE-2021-46666&#xa;    &#x9;CVE-2021-46659&#x9;5.5&#x9;https://vulners.com/cve/CVE-2021-46659&#xa;    &#x9;CVE-2016-7440&#x9;5.5&#x9;https://vulners.com/cve/CVE-2016-7440&#xa;    &#x9;CVE-2016-0651&#x9;5.5&#x9;https://vulners.com/cve/CVE-2016-0651&#xa;    &#x9;CVE-2014-4260&#x9;5.5&#x9;https://vulners.com/cve/CVE-2014-4260&#xa;    &#x9;CVE-2020-2752&#x9;5.3&#x9;https://vulners.com/cve/CVE-2020-2752&#xa;    &#x9;CVE-2020-14550&#x9;5.3&#x9;https://vulners.com/cve/CVE-2020-14550&#xa;    &#x9;CVE-2018-3174&#x9;5.3&#x9;https://vulners.com/cve/CVE-2018-3174&#xa;    &#x9;CVE-2017-3636&#x9;5.3&#x9;https://vulners.com/cve/CVE-2017-3636&#xa;    &#x9;CVE-2019-2739&#x9;5.1&#x9;https://vulners.com/cve/CVE-2019-2739&#xa;    &#x9;CVE-2014-2440&#x9;5.1&#x9;https://vulners.com/cve/CVE-2014-2440&#xa;    &#x9;SSV:60679&#x9;5.0&#x9;https://vulners.com/seebug/SSV:60679&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2018-3081&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-3081&#xa;    &#x9;CVE-2015-2568&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-2568&#xa;    &#x9;CVE-2013-3801&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-3801&#xa;    &#x9;CVE-2013-1861&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-1861&#xa;    &#x9;CVE-2012-1702&#x9;5.0&#x9;https://vulners.com/cve/CVE-2012-1702&#xa;    &#x9;CVE-2020-2812&#x9;4.9&#x9;https://vulners.com/cve/CVE-2020-2812&#xa;    &#x9;CVE-2019-2737&#x9;4.9&#x9;https://vulners.com/cve/CVE-2019-2737&#xa;    &#x9;CVE-2019-2627&#x9;4.9&#x9;https://vulners.com/cve/CVE-2019-2627&#xa;    &#x9;CVE-2019-2481&#x9;4.9&#x9;https://vulners.com/cve/CVE-2019-2481&#xa;    &#x9;CVE-2018-3282&#x9;4.9&#x9;https://vulners.com/cve/CVE-2018-3282&#xa;    &#x9;CVE-2018-3063&#x9;4.9&#x9;https://vulners.com/cve/CVE-2018-3063&#xa;    &#x9;CVE-2018-2781&#x9;4.9&#x9;https://vulners.com/cve/CVE-2018-2781&#xa;    &#x9;CVE-2017-3641&#x9;4.9&#x9;https://vulners.com/cve/CVE-2017-3641&#xa;    &#x9;CVE-2017-3456&#x9;4.9&#x9;https://vulners.com/cve/CVE-2017-3456&#xa;    &#x9;CVE-2016-5629&#x9;4.9&#x9;https://vulners.com/cve/CVE-2016-5629&#xa;    &#x9;CVE-2013-5807&#x9;4.9&#x9;https://vulners.com/cve/CVE-2013-5807&#xa;    &#x9;CVE-2017-3313&#x9;4.7&#x9;https://vulners.com/cve/CVE-2017-3313&#xa;    &#x9;CVE-2016-0642&#x9;4.7&#x9;https://vulners.com/cve/CVE-2016-0642&#xa;    &#x9;CVE-2015-4879&#x9;4.6&#x9;https://vulners.com/cve/CVE-2015-4879&#xa;    &#x9;CVE-2013-1523&#x9;4.6&#x9;https://vulners.com/cve/CVE-2013-1523&#xa;    &#x9;CVE-2005-0004&#x9;4.6&#x9;https://vulners.com/cve/CVE-2005-0004&#xa;    &#x9;CVE-2019-2614&#x9;4.4&#x9;https://vulners.com/cve/CVE-2019-2614&#xa;    &#x9;CVE-2018-2771&#x9;4.4&#x9;https://vulners.com/cve/CVE-2018-2771&#xa;    &#x9;CVE-2017-3243&#x9;4.4&#x9;https://vulners.com/cve/CVE-2017-3243&#xa;    &#x9;CVE-2016-5584&#x9;4.4&#x9;https://vulners.com/cve/CVE-2016-5584&#xa;    &#x9;CVE-2018-3058&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-3058&#xa;    &#x9;CVE-2018-2813&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-2813&#xa;    &#x9;CVE-2017-3651&#x9;4.3&#x9;https://vulners.com/cve/CVE-2017-3651&#xa;    &#x9;CVE-2017-3464&#x9;4.3&#x9;https://vulners.com/cve/CVE-2017-3464&#xa;    &#x9;CVE-2015-2620&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-2620&#xa;    &#x9;CVE-2015-0382&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-0382&#xa;    &#x9;CVE-2015-0381&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-0381&#xa;    &#x9;CVE-2014-6559&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6559&#xa;    &#x9;CVE-2014-6507&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6507&#xa;    &#x9;CVE-2014-6496&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6496&#xa;    &#x9;CVE-2014-6495&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6495&#xa;    &#x9;CVE-2014-6494&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6494&#xa;    &#x9;CVE-2014-6478&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-6478&#xa;    &#x9;CVE-2013-0383&#x9;4.3&#x9;https://vulners.com/cve/CVE-2013-0383&#xa;    &#x9;CVE-2017-10268&#x9;4.1&#x9;https://vulners.com/cve/CVE-2017-10268&#xa;    &#x9;CVE-2014-4274&#x9;4.1&#x9;https://vulners.com/cve/CVE-2014-4274&#xa;    &#x9;SSV:60908&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60908&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60600&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60600&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60599&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60599&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60598&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60598&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60597&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60597&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60501&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60501&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:137232&#x9;4.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:137232&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:118553&#x9;4.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:118553&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:4856CE5DA621AD64273C51D5420971CA&#x9;4.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:4856CE5DA621AD64273C51D5420971CA&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:39867&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:39867&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-3318&#x9;4.0&#x9;https://vulners.com/cve/CVE-2017-3318&#xa;    &#x9;CVE-2017-3317&#x9;4.0&#x9;https://vulners.com/cve/CVE-2017-3317&#xa;    &#x9;CVE-2016-0616&#x9;4.0&#x9;https://vulners.com/cve/CVE-2016-0616&#xa;    &#x9;CVE-2015-4870&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4870&#xa;    &#x9;CVE-2015-4858&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4858&#xa;    &#x9;CVE-2015-4830&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4830&#xa;    &#x9;CVE-2015-4826&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4826&#xa;    &#x9;CVE-2015-4816&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4816&#xa;    &#x9;CVE-2015-4815&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4815&#xa;    &#x9;CVE-2015-4802&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4802&#xa;    &#x9;CVE-2015-4752&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-4752&#xa;    &#x9;CVE-2015-2648&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-2648&#xa;    &#x9;CVE-2015-2643&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-2643&#xa;    &#x9;CVE-2015-2582&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-2582&#xa;    &#x9;CVE-2015-2573&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-2573&#xa;    &#x9;CVE-2015-2571&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-2571&#xa;    &#x9;CVE-2015-0441&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-0441&#xa;    &#x9;CVE-2015-0433&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-0433&#xa;    &#x9;CVE-2015-0432&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-0432&#xa;    &#x9;CVE-2015-0391&#x9;4.0&#x9;https://vulners.com/cve/CVE-2015-0391&#xa;    &#x9;CVE-2014-6520&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-6520&#xa;    &#x9;CVE-2014-6505&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-6505&#xa;    &#x9;CVE-2014-6484&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-6484&#xa;    &#x9;CVE-2014-6464&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-6464&#xa;    &#x9;CVE-2014-4287&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-4287&#xa;    &#x9;CVE-2014-4207&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-4207&#xa;    &#x9;CVE-2014-2494&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-2494&#xa;    &#x9;CVE-2014-2419&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-2419&#xa;    &#x9;CVE-2014-0412&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0412&#xa;    &#x9;CVE-2014-0402&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0402&#xa;    &#x9;CVE-2014-0401&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0401&#xa;    &#x9;CVE-2014-0386&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0386&#xa;    &#x9;CVE-2014-0384&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0384&#xa;    &#x9;CVE-2013-5891&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-5891&#xa;    &#x9;CVE-2013-3839&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3839&#xa;    &#x9;CVE-2013-3809&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3809&#xa;    &#x9;CVE-2013-3808&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3808&#xa;    &#x9;CVE-2013-3805&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3805&#xa;    &#x9;CVE-2013-3804&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3804&#xa;    &#x9;CVE-2013-3802&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3802&#xa;    &#x9;CVE-2013-3794&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3794&#xa;    &#x9;CVE-2013-3793&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3793&#xa;    &#x9;CVE-2013-3783&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-3783&#xa;    &#x9;CVE-2013-2392&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-2392&#xa;    &#x9;CVE-2013-2389&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-2389&#xa;    &#x9;CVE-2013-2376&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-2376&#xa;    &#x9;CVE-2013-1555&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-1555&#xa;    &#x9;CVE-2013-1544&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-1544&#xa;    &#x9;CVE-2013-1532&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-1532&#xa;    &#x9;CVE-2013-1526&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-1526&#xa;    &#x9;CVE-2013-1512&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-1512&#xa;    &#x9;CVE-2013-0371&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-0371&#xa;    &#x9;CVE-2013-0368&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-0368&#xa;    &#x9;CVE-2013-0367&#x9;4.0&#x9;https://vulners.com/cve/CVE-2013-0367&#xa;    &#x9;CVE-2012-5627&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-5627&#xa;    &#x9;CVE-2012-5614&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-5614&#xa;    &#x9;CVE-2012-3180&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-3180&#xa;    &#x9;CVE-2012-3173&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-3173&#xa;    &#x9;CVE-2012-3166&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-3166&#xa;    &#x9;CVE-2012-3150&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-3150&#xa;    &#x9;CVE-2012-1757&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1757&#xa;    &#x9;CVE-2012-1756&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1756&#xa;    &#x9;CVE-2012-1734&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1734&#xa;    &#x9;CVE-2012-1705&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1705&#xa;    &#x9;CVE-2012-1697&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1697&#xa;    &#x9;CVE-2012-1690&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1690&#xa;    &#x9;CVE-2012-1689&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1689&#xa;    &#x9;CVE-2012-1688&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-1688&#xa;    &#x9;CVE-2012-0578&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0578&#xa;    &#x9;CVE-2012-0574&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0574&#xa;    &#x9;CVE-2012-0572&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0572&#xa;    &#x9;CVE-2012-0540&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0540&#xa;    &#x9;1337DAY-ID-26031&#x9;4.0&#x9;https://vulners.com/zdt/1337DAY-ID-26031&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-2007&#x9;3.7&#x9;https://vulners.com/cve/CVE-2021-2007&#xa;    &#x9;CVE-2020-2922&#x9;3.7&#x9;https://vulners.com/cve/CVE-2020-2922&#xa;    &#x9;CVE-2016-0610&#x9;3.5&#x9;https://vulners.com/cve/CVE-2016-0610&#xa;    &#x9;CVE-2015-4913&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-4913&#xa;    &#x9;CVE-2015-4864&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-4864&#xa;    &#x9;CVE-2015-4861&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-4861&#xa;    &#x9;CVE-2015-4807&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-4807&#xa;    &#x9;CVE-2015-4757&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-4757&#xa;    &#x9;CVE-2015-0505&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-0505&#xa;    &#x9;CVE-2015-0499&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-0499&#xa;    &#x9;CVE-2015-0374&#x9;3.5&#x9;https://vulners.com/cve/CVE-2015-0374&#xa;    &#x9;CVE-2014-6568&#x9;3.5&#x9;https://vulners.com/cve/CVE-2014-6568&#xa;    &#x9;CVE-2014-2438&#x9;3.5&#x9;https://vulners.com/cve/CVE-2014-2438&#xa;    &#x9;CVE-2014-2430&#x9;3.5&#x9;https://vulners.com/cve/CVE-2014-2430&#xa;    &#x9;CVE-2014-0437&#x9;3.5&#x9;https://vulners.com/cve/CVE-2014-0437&#xa;    &#x9;CVE-2013-3812&#x9;3.5&#x9;https://vulners.com/cve/CVE-2013-3812&#xa;    &#x9;CVE-2013-1548&#x9;3.5&#x9;https://vulners.com/cve/CVE-2013-1548&#xa;    &#x9;CVE-2013-1511&#x9;3.5&#x9;https://vulners.com/cve/CVE-2013-1511&#xa;    &#x9;CVE-2012-5096&#x9;3.5&#x9;https://vulners.com/cve/CVE-2012-5096&#xa;    &#x9;CVE-2012-3197&#x9;3.5&#x9;https://vulners.com/cve/CVE-2012-3197&#xa;    &#x9;CVE-2012-3167&#x9;3.5&#x9;https://vulners.com/cve/CVE-2012-3167&#xa;    &#x9;CVE-2018-3066&#x9;3.3&#x9;https://vulners.com/cve/CVE-2018-3066&#xa;    &#x9;CVE-2014-6463&#x9;3.3&#x9;https://vulners.com/cve/CVE-2014-6463&#xa;    &#x9;CVE-2014-0393&#x9;3.3&#x9;https://vulners.com/cve/CVE-2014-0393&#xa;    &#x9;CVE-2018-2767&#x9;3.1&#x9;https://vulners.com/cve/CVE-2018-2767&#xa;    &#x9;CVE-2017-3653&#x9;3.1&#x9;https://vulners.com/cve/CVE-2017-3653&#xa;    &#x9;CVE-2013-2391&#x9;3.0&#x9;https://vulners.com/cve/CVE-2013-2391&#xa;    &#x9;CVE-2015-4836&#x9;2.8&#x9;https://vulners.com/cve/CVE-2015-4836&#xa;    &#x9;CVE-2014-4243&#x9;2.8&#x9;https://vulners.com/cve/CVE-2014-4243&#xa;    &#x9;CVE-2014-2432&#x9;2.8&#x9;https://vulners.com/cve/CVE-2014-2432&#xa;    &#x9;CVE-2014-0420&#x9;2.8&#x9;https://vulners.com/cve/CVE-2014-0420&#xa;    &#x9;CVE-2013-1506&#x9;2.8&#x9;https://vulners.com/cve/CVE-2013-1506&#xa;    &#x9;CVE-2014-2431&#x9;2.6&#x9;https://vulners.com/cve/CVE-2014-2431&#xa;    &#x9;CVE-2013-5908&#x9;2.6&#x9;https://vulners.com/cve/CVE-2013-5908&#xa;    &#x9;CVE-2014-6551&#x9;2.1&#x9;https://vulners.com/cve/CVE-2014-6551&#xa;    &#x9;CVE-2012-3160&#x9;2.1&#x9;https://vulners.com/cve/CVE-2012-3160&#xa;    &#x9;CVE-2015-4792&#x9;1.7&#x9;https://vulners.com/cve/CVE-2015-4792&#xa;    &#x9;CVE-2013-1502&#x9;1.5&#x9;https://vulners.com/cve/CVE-2013-1502"><table key="MariaDB 5.5.5-10.6.18">
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:92513</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:92510</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:139491</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:139476</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:55F22FE44A0D6F3F9005C334804B2317</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:3D8D46697DAADEA8249E37B2A2F09AE3</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-2750</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-9843</elem>
+<elem key="cvss">9.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3163</elem>
+<elem key="cvss">9.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15365</elem>
+<elem key="cvss">8.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-24052</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-24051</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-24050</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-24048</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15945</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2325</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2755</elem>
+<elem key="cvss">7.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3309</elem>
+<elem key="cvss">7.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3308</elem>
+<elem key="cvss">7.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2023-5157</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-27449</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-27385</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-46669</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3302</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-3471</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0411</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6500</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6491</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0001</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3158</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-2144</elem>
+<elem key="cvss">7.2</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4819</elem>
+<elem key="cvss">7.2</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2562</elem>
+<elem key="cvss">7.1</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:40679</elem>
+<elem key="cvss">7.0</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:40678</elem>
+<elem key="cvss">7.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-28912</elem>
+<elem key="cvss">7.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-6664</elem>
+<elem key="cvss">7.0</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-26205</elem>
+<elem key="cvss">6.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6469</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0389</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0386</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0384</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5060</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3177</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1735</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1703</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3312</elem>
+<elem key="cvss">6.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3600</elem>
+<elem key="cvss">6.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0385</elem>
+<elem key="cvss">6.6</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:118551</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-2780</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2974</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2805</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2740</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2529</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2455</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3133</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2819</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2817</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2668</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2665</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2640</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2622</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3453</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3258</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3244</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3238</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-10384</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-10379</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-10378</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5626</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5624</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5612</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-3492</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0502</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6555</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6530</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4258</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2436</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2378</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2375</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1552</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1531</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1521</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5612</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2503</elem>
+<elem key="cvss">6.4</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3291</elem>
+<elem key="cvss">6.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-2011</elem>
+<elem key="cvss">5.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-2574</elem>
+<elem key="cvss">5.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2761</elem>
+<elem key="cvss">5.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-7744</elem>
+<elem key="cvss">5.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-3152</elem>
+<elem key="cvss">5.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0501</elem>
+<elem key="cvss">5.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3265</elem>
+<elem key="cvss">5.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-31624</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-31623</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-31622</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2022-31621</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-46667</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-46666</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-46659</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-7440</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0651</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4260</elem>
+<elem key="cvss">5.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-2752</elem>
+<elem key="cvss">5.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-14550</elem>
+<elem key="cvss">5.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3174</elem>
+<elem key="cvss">5.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3636</elem>
+<elem key="cvss">5.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2739</elem>
+<elem key="cvss">5.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2440</elem>
+<elem key="cvss">5.1</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60679</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3081</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2568</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3801</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1861</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1702</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-2812</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2737</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2627</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2481</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3282</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3063</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2781</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3641</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3456</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5629</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-5807</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3313</elem>
+<elem key="cvss">4.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0642</elem>
+<elem key="cvss">4.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4879</elem>
+<elem key="cvss">4.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1523</elem>
+<elem key="cvss">4.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2005-0004</elem>
+<elem key="cvss">4.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-2614</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2771</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3243</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5584</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3058</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2813</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3651</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3464</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2620</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0382</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0381</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6559</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6507</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6496</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6495</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6494</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6478</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0383</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-10268</elem>
+<elem key="cvss">4.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4274</elem>
+<elem key="cvss">4.1</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60908</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60600</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60599</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60598</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60597</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60501</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:137232</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:118553</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:4856CE5DA621AD64273C51D5420971CA</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:39867</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3318</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3317</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0616</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4870</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4858</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4830</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4826</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4816</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4815</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4802</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4752</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2648</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2643</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2582</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2573</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-2571</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0441</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0433</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0432</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0391</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6520</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6505</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6484</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6464</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4287</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4207</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2494</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2419</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0412</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0402</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0401</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0386</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0384</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-5891</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3839</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3809</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3808</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3805</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3804</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3802</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3794</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3793</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3783</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2392</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2389</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2376</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1555</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1544</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1532</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1526</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1512</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0371</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0368</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0367</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5627</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5614</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3180</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3173</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3166</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3150</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1757</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1756</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1734</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1705</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1697</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1690</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1689</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1688</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0578</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0574</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0572</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0540</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-26031</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-2007</elem>
+<elem key="cvss">3.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-2922</elem>
+<elem key="cvss">3.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0610</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4913</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4864</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4861</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4807</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4757</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0505</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0499</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0374</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6568</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2438</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2430</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0437</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-3812</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1548</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1511</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5096</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3197</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3167</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-3066</elem>
+<elem key="cvss">3.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6463</elem>
+<elem key="cvss">3.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0393</elem>
+<elem key="cvss">3.3</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-2767</elem>
+<elem key="cvss">3.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3653</elem>
+<elem key="cvss">3.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2391</elem>
+<elem key="cvss">3.0</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4836</elem>
+<elem key="cvss">2.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-4243</elem>
+<elem key="cvss">2.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2432</elem>
+<elem key="cvss">2.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0420</elem>
+<elem key="cvss">2.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1506</elem>
+<elem key="cvss">2.8</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-2431</elem>
+<elem key="cvss">2.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-5908</elem>
+<elem key="cvss">2.6</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-6551</elem>
+<elem key="cvss">2.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3160</elem>
+<elem key="cvss">2.1</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-4792</elem>
+<elem key="cvss">1.7</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1502</elem>
+<elem key="cvss">1.5</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="32518" rttvar="8312" to="100000"/>
+</host>
+<runstats><finished time="1721019210" timestr="Mon Jul 15 11:53:30 2024" summary="Nmap done at Mon Jul 15 11:53:30 2024; 1 IP address (1 host up) scanned in 99.63 seconds" elapsed="99.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

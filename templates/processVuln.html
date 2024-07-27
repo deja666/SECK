@@ -1,0 +1,70 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+    <section class="pc-container">
+        <div class="pcoded-content">
+            
+            <h1>ZAP Scan Progress</h1>
+            <div id="log" style="height: 400px;color: white; overflow-y: scroll;border: 1px solid #ccc;padding: 10px;background-color: black;border: 6px; font-size: 18px;">
+
+            </div>
+            
+            <script>
+                let fetchInterval; // Variable to hold the interval ID
+
+                function fetchData(target) {
+        fetch(`/cache/${target}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data['data'] !== "") {
+                    console.log(`Received data: ${data['data']}`);
+                    if (data['data'].includes("menyimpan")) {
+                        console.log("Redirecting to laporan page...");
+                        window.location.href = '/laporan/{{ path }}';
+                    }
+                    logMessage(data['data']);
+                } 
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                stopFetching();
+            });
+    }
+
+                function fetchPeriodically(target, interval) {
+                    fetchInterval = setInterval(function() {
+                        fetchData(target);
+                    }, interval);
+                }
+
+                function stopFetching() {
+                    clearInterval(fetchInterval); // Clear the interval to stop periodic fetching
+                }
+
+                // Replace '{{ nama }}' with the actual target value you want to fetch
+                fetchPeriodically('{{ nama }}', 200); // Start fetching with 200ms interval (0.2 seconds)
+
+                function logMessage(message) {
+                    var logDiv = document.getElementById('log');
+                    var logLine = document.createElement('div');
+                    logLine.textContent = message;
+                    logDiv.appendChild(logLine);
+                    logDiv.scrollTop = logDiv.scrollHeight; 
+                }
+            </script>
+        </div>
+    </section>
+    <!-- [ Main Content ] end -->
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock javascripts %}

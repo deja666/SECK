@@ -1,0 +1,59 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} WHOIS Detail {% endblock title %}
+
+{% block stylesheets %}
+<!-- Include any specific CSS for this page -->
+{% endblock stylesheets %}
+{% block content %}
+<!-- Main Content -->
+<section class="pc-container">
+    <div class="pcoded-content">
+        <!-- Breadcrumb -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Recon</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/viewDomain">Domain</a></li>
+                            <li class="breadcrumb-item active">Detail Data Pengintaian Domain</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <!-- Main Content -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <a type="button" class="btn btn-primary m-b-10" href="/viewDomain">
+                            Kembali
+                        </a>
+                        <p><strong>Domain:</strong> {{ whois_result.domain }}</p>
+                        <p><strong>Tanggal Dibuat:</strong> {{ whois_result.creation_date }}</p>
+                        <p><strong>Tanggal Kadaluwarsa:</strong> {{ whois_result.expiration_date }}</p>
+                        <p><strong>Penyedia Register:</strong> {{ whois_result.registrar }}</p>
+                        <p><strong>Kota Penyedia:</strong> {{ whois_result.registrar_city }}</p>
+                        <p><strong>No.Telepon Penyedia:</strong> {{ whois_result.registrar_phone }}</p>
+                        <p><strong>Layanan Server:</strong> {{ whois_result.name_servers }}</p>
+                        <!-- Add other fields as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+    </div>
+</section>
+<!-- End Main Content -->
+{% endblock content %}
+
+{% block javascripts %}
+<!-- Include any specific JS for this page -->
+{% endblock javascripts %}

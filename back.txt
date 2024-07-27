@@ -1,0 +1,42 @@
+def perform_nmap_scan(target):
+    nm = nmap.PortScanner()
+    nm.scan(hosts=target, arguments='-sV --script vulners')
+
+    scan_results = []
+
+    for host in nm.all_hosts():
+        host_info = {
+            'hostname': nm[host].hostname(),
+            'state': nm[host].state(),
+            'protocols': []
+        }
+
+        for proto in nm[host].all_protocols():
+            for port in nm[host][proto].keys():
+                service_info = nm[host][proto][port]
+                port_info = {
+                    'port': port,
+                    'state': service_info['state'],
+                    'name': service_info.get('name', 'unknown'),
+                    'product': service_info.get('product', 'unknown'),
+                    'version': service_info.get('version', 'unknown'),
+                    'vulners': []
+                }
+                
+                # Check if 'vulners' script output exists and is in expected format
+                if 'script' in service_info and 'vulners' in service_info['script']:
+                    vulners_output = service_info['script']['vulners']
+                    if isinstance(vulners_output, list):
+                        for vuln in vulners_output:
+                            if isinstance(vuln, dict) and 'id' in vuln and 'description' in vuln:
+                                vuln_info = {
+                                    'id': vuln['id'],
+                                    'description': vuln['description']
+                                }
+                                port_info['vulners'].append(vuln_info)
+
+                host_info['protocols'].append(port_info)
+
+        scan_results.append(host_info)
+
+    return scan_results

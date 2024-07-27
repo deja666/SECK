@@ -1,0 +1,165 @@
+{
+    "target": "https://helpdesk.ksupostra.id/",
+    "alerts": [
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini adalah peringatan informasi dan bukan kerentanan sehingga tidak ada yang perlu diperbaiki.",
+            "url": "https://helpdesk.ksupostra.id/",
+            "evidence": "e3019a5cd163f4573ac6542636163dc67e4dc453",
+            "cweid": "-1 ",
+            "referensi": "https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id"
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini adalah peringatan informasi daripada kerentanan sehingga tidak ada yang perlu diperbaiki.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "a7e08385ad6cd2d3fff5ebcd6018cbe0",
+            "cweid": "- 1",
+            "referensi": "https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id"
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mengurangi jenis serangan tertentu. Termasuk (tetapi tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau penyebaran malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web untuk menyatakan sumber konten yang disetujui yang boleh dimuat oleh browser pada halaman tersebut \u2014 jenis yang tercakup adalah JavaScript, CSS, frame HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web, server aplikasi, penyeimbang beban, dsb. Anda dikonfigurasi dengan benar untuk menyetel header Content-Security-Policy.",
+            "url": "https://helpdesk.ksupostra.id/",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps://github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": " https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps://github .com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": " https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps://github .com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan serangkaian header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps:// github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "CSP: script-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps:// github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "CSP: style-src unsafe-inline",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps:// github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi dan bukan kerentanan sehingga tidak ada yang perlu diperbaiki.",
+            "url": "https://helpdesk.ksupostra.id/sitemap.xml",
+            "evidence": "6def6c786059e29a7cdf40ebfc02fdb1",
+            "cweid": "-1",
+            "referensi": "https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id"
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan bendera HttpOnly disetel untuk semua cookie.",
+            "url": "https:// helpdesk.ksupostra.id/login",
+            "evidence": "set-cookie: csrf_cookie_name",
+            "cweid": "1004",
+            "reference": "https://owasp.org/www-community/HttpOnly"
+        },
+        {
+            "nama": "Cookie tanpa Atribut SameSite",
+            "deskripsi": "Cookie telah ditetapkan tanpa atribut SameSite, yang berarti bahwa cookie dapat dikirim sebagai hasil dari permintaan 'lintas situs'. Atribut SameSite merupakan tindakan pencegahan yang efektif terhadap pemalsuan permintaan lintas situs, penyertaan skrip lintas situs, dan serangan pengaturan waktu.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan bahwa atribut SameSite ditetapkan ke 'longgar' atau idealnya 'ketat' untuk semua cookie.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "set-cookie: csrf_cookie_name",
+            "cweid": "1275",
+            "reference": "https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site"
+        },
+        {
+            "nama": "Respon Manajemen Sesi Teridentifikasi",
+            "deskripsi": "Respon yang diberikan telah diidentifikasi mengandung token manajemen sesi. Bidang 'Info Lainnya' berisi sekumpulan token header yang dapat digunakan dalam Metode Manajemen Sesi Berbasis Header. Jika permintaan berada dalam konteks yang memiliki Metode Manajemen Sesi yang disetel ke \"Deteksi Otomatis\" maka aturan ini akan mengubah manajemen sesi untuk menggunakan token yang diidentifikasi.",
+            "deskripsi_masalah": "Informasi",
+            "solusi_masalah": "Ini merupakan peringatan informasi dan bukan kerentanan sehingga tidak ada yang perlu diperbaiki.",
+            "url": "https://helpdesk.ksupostra.id/robots.txt",
+            "evidence": "23f8f4bee12bbbdf1ef7f128435d7ba2",
+            "cweid": "-1",
+            "referensi": "https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id"
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/sitemap.xml",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference ": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps: //github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "Cookie Tanpa Bendera HttpOnly",
+            "deskripsi": "Cookie telah disetel tanpa bendera HttpOnly, yang berarti cookie dapat diakses oleh JavaScript. Jika skrip berbahaya dapat dijalankan di halaman ini maka cookie akan dapat diakses dan dapat dikirimkan ke situs lain. Jika ini adalah cookie sesi maka pembajakan sesi mungkin terjadi.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan bendera HttpOnly disetel untuk semua cookie.",
+            "url": "https:// helpdesk.ksupostra.id/",
+            "bukti": "set-cookie: csrf_cookie_name",
+            "cweid": "1004",
+            "referensi": "https://owasp.org/www-community/HttpOnly"
+        },
+        {
+            "nama": "CSP: Wildcard Directive",
+            "deskripsi": "Kebijakan Keamanan Konten (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan memitigasi jenis serangan tertentu. Termasuk (namun tidak terbatas pada) Cross Site Scripting (XSS), dan serangan injeksi data. Serangan-serangan ini digunakan untuk segala hal mulai dari pencurian data hingga perusakan situs atau distribusi malware. CSP menyediakan sekumpulan header HTTP standar yang memungkinkan pemilik situs web mendeklarasikan sumber konten yang disetujui yang boleh dimuat oleh browser di halaman tersebut \u2014 tipe yang tercakup adalah JavaScript, CSS, bingkai HTML, font, gambar, dan objek yang dapat disematkan seperti applet Java, ActiveX, file audio dan video.",
+            "deskripsi_masalah": "Sedang",
+            "solusi_masalah": "Pastikan server web Anda, server aplikasi, penyeimbang beban, dll. dikonfigurasi dengan benar untuk mengatur header Kebijakan-Keamanan-Konten.",
+            "url": "https://helpdesk.ksupostra.id/robots.txt",
+            "evidence": "upgrade-insecure-requests; frame-ancestors 'self'",
+            "cweid": "693",
+            "reference ": "https://www.w3.org/TR/CSP/\nhttps://caniuse.com/#search=content+security+policy\nhttps://content-security-policy.com/\nhttps: //github.com/HtmlUnit/htmlunit-csp\nhttps://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources"
+        },
+        {
+            "nama": "Penyertaan Berkas Sumber JavaScript Lintas Domain",
+            "deskripsi": "Halaman memuat satu atau beberapa berkas skrip dari domain pihak ketiga.",
+            "deskripsi_masalah": "Rendah",
+            "solusi_masalah": "Pastikan berkas sumber JavaScript dimuat hanya dari sumber tepercaya, dan sumbernya tidak dapat dikontrol oleh pengguna akhir aplikasi.",
+            "url": "https://helpdesk.ksupostra.id/login",
+            "evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>",
+            "cweid": "829",
+            "reference": ""
+        }
+    ]
+}
