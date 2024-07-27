@@ -1,5 +1,6 @@
 import logging
-from flask import Flask, flash, render_template, request, jsonify, redirect, make_response, current_app as app, url_for
+import re
+from flask import Flask, flash, render_template, request, jsonify, redirect, make_response, current_app as app, url_for ,get_flashed_messages
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from flask_bcrypt import Bcrypt
 from sqlalchemy.exc import SQLAlchemyError
@@ -105,7 +106,7 @@ def login():
             elif user.role == 'operator':
                 return redirect(url_for('dashboardOperator'))
         else:
-            flash('Login Unsuccessful. Please check username and password', 'danger')
+            flash('Login Gagal. Username Atau Password Salah', 'danger')
     return render_template('login.html')
 
 @app.route('/logout')
@@ -388,6 +389,11 @@ def processVuln():
         return render_template('processVuln.html', nama=name, path=jpath)
     return render_template('processVuln.html')
 
+def regexDomain(domain):
+    # Regex sederhana untuk validasi domain
+    regex = r'^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$'
+    return re.match(regex, domain) is not None
+
 @app.route('/viewDomain', methods=['GET', 'POST'])
 @login_required
 @role_required('operator')
@@ -397,37 +403,45 @@ def viewDomain():
     if request.method == 'POST':
         domain = request.form['domain']
         
+        # Validasi domain
+        if not regexDomain(domain):
+            flash('Alamat Domain Tidak Valid', 'danger')
+            return redirect(url_for('viewDomain'))
         # Menggunakan library whois untuk mendapatkan informasi domain
         try:
             domain_info = whois.whois(domain)
-            domain_id = str(domain_info.domain_id)
-            creation_date = str(domain_info.creation_date)
-            expiration_date = str(domain_info.expiration_date)
-            registrar = str(domain_info.registrar)
-            registrar_city = str(domain_info.registrar_city)
-            registrar_phone = str(domain_info.registrar_phone)
+            domain_id = str(domain_info.domain_id) if domain_info.domain_id else 'N/A'
+            creation_date = str(domain_info.creation_date) if domain_info.creation_date else 'N/A'
+            expiration_date = str(domain_info.expiration_date) if domain_info.expiration_date else 'N/A'
+            registrar = str(domain_info.registrar) if domain_info.registrar else 'N/A'
+            registrar_city = str(domain_info.registrar_city) if domain_info.registrar_city else 'N/A'
+            registrar_phone = str(domain_info.registrar_phone) if domain_info.registrar_phone else 'N/A'
             name_servers = ', '.join(domain_info.name_servers) if domain_info.name_servers else 'N/A'
+            
+            # Menyimpan hasil whois ke database
+            whois_result = ReconDomain(
+                domain_id=domain_id,
+                domain=domain,
+                creation_date=creation_date, 
+                expiration_date=expiration_date, 
+                registrar=registrar, 
+                name_servers=name_servers,
+                registrar_city=registrar_city,
+                registrar_phone=registrar_phone,
+                id_user=current_user.id_user
+            )
+            db.session.add(whois_result)
+            db.session.commit()
+            
+            flash('Data Domain Berhasil Di Tambahkan', 'success')
+            return redirect(url_for('viewDomain', result_id=whois_result.id))
+        
         except Exception as e:
-            return render_template('error.html', error=str(e))
-        
-        # Menyimpan hasil whois ke database
-        whois_result = ReconDomain(
-            domain_id=domain_id,
-            domain=domain,
-            creation_date=creation_date, 
-            expiration_date=expiration_date, 
-            registrar=registrar, 
-            name_servers=name_servers,
-            registrar_city=registrar_city,
-            registrar_phone=registrar_phone,
-            id_user=current_user.id_user
-        )
-        db.session.add(whois_result)
-        db.session.commit()
-        
-        return redirect(url_for('detailDomain', result_id=whois_result.id))
+            flash(f'Error: {str(e)}', 'danger')
+            return redirect(url_for('viewDomain'))
     
-    return render_template('viewDomain.html',username=username,role=user_role,data=get_data_domain())
+    return render_template('viewDomain.html', username=username, role=user_role, data=get_data_domain())
+
 
 @app.route('/detailDomain/<int:result_id>')
 @login_required
@@ -437,6 +451,21 @@ def detailDomain(result_id):
     username = current_user.username
     whois_result = ReconDomain.query.get_or_404(result_id)
     return render_template('detailDomain.html', username = username,whois_result=whois_result, role=user_role)
+
+@app.route('/deleteDomain/<int:id>', methods=['POST'])
+@login_required
+def deleteDomain(id):
+    domain = ReconDomain.query.get_or_404(id)
+
+    try:
+        db.session.delete(domain)
+        db.session.commit()
+        flash('Data Domain berhasil dihapus', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash('Gagal menghapus Data Domain', 'danger')
+
+    return redirect(url_for('viewDomain'))
 
 @app.route('/viewTech', methods=['GET', 'POST'])
 @login_required

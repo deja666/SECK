@@ -27,13 +27,27 @@
                 </div>
             </div>
             <!-- [ breadcrumb ] end -->
+            
             <!-- [ Main Content ] start -->
             <div class="row">
                 <!-- [ Contextual-table ] start -->
                 <div class="col-md-12">
                     <div class="card">
                         <button type="button" style="width: 16%; margin-left: 83%;margin-top: 12px;" class="btn btn-primary" data-toggle="modal" data-target="#createDomainModal">Buat Recon Domain Baru</button>
+                        
                         <div class="card-body table-border-style">
+                            <!-- Display flash messages -->
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                            <div class="alert-container br ">
+                                {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}">
+                                    {{ message }}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        {% endwith %}
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -48,7 +62,12 @@
                                         <tr>
                                             <td>{{domain.id}}</td>
                                             <td>{{domain.domain}}</td>
-                                            <td><button type="button" class="btn btn-secondary" onclick="window.location.href = '/detailDomain/{{domain.id}}';">Detail</button></td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary" onclick="window.location.href = '/detailDomain/{{domain.id}}';">Detail</button>
+                                                <form action="{{ url_for('deleteDomain', id=domain.id) }}" method="POST" style="display:inline;">
+                                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                                </form>
+                                            </td>
                                         </tr>
                                         {% endfor %}
                                     </tbody>
@@ -78,7 +97,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="scanTarget">Target Whois Domain</label>
-                        <input type="text" class="form-control" id="domain" name="domain" required>
+                        <input type="text" class="form-control" id="domain" placeholder="website.com" name="domain" required>
                     </div>
                 </div>
                 <div class="modal-footer">
