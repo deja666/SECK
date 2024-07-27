@@ -37,6 +37,18 @@
                         {% endif %}
                         <button type="button" style="width: 16%; margin-left: 83%;margin-top: 12px;" class="btn btn-primary" data-toggle="modal" data-target="#createDomainModal">Tambah Pemindaian Port</button>
                         <div class="card-body table-border-style">
+                            <!-- Display flash messages -->
+                            {% with messages = get_flashed_messages(with_categories=true) %}
+                                {% if messages %}
+                                <div class="alert-container br ">
+                                    {% for category, message in messages %}
+                                    <div class="alert alert-{{ category }}">
+                                        {{ message }}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            {% endwith %}
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -74,7 +86,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="scanTarget">Host / Domain Target</label>
-                        <input type="text" class="form-control" id="target" name="target" required>
+                        <input type="text" class="form-control" id="target" name="target" placeholder="website.com , 192.168.1.1" required>
                     </div>
                 </div>
                 <div class="modal-footer">

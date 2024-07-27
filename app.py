@@ -20,7 +20,7 @@ import nmap
 from deep_translator import GoogleTranslator
 translator = GoogleTranslator(source='en', target='id')
 # icon sidebar / icon kembali detail eksploit,domain,vuln
-# pesan belum ada
+# pesan belum ada kerentanan
 
 # Initialize Flask application
 app = Flask(__name__)
@@ -488,15 +488,19 @@ def viewTech():
                     technology=tech,
                     id_user=current_user.id_user
                 )
-                db.session.add(result)
+            db.session.add(result)
             db.session.commit()
+
+            flash('Data Pengintaian Teknologi Berhasil Di Tambahkan', 'success')
+            return redirect(url_for('viewTech'))
+
         except requests.exceptions.Timeout:
-            error_message = "Timeout: Server tidak merespons dalam waktu yang diizinkan."
-            return render_template('viewTech.html', error=error_message)
+            flash("Timeout: Server tidak merespons dalam waktu yang diizinkan.")
+            return render_template('viewTech.html')
 
         except Exception as e:
-            error_message = str(e)
-            return render_template('viewTech.html', error=error_message)
+            flash(f'Error: {str(e)}', 'danger')
+            return redirect(url_for('viewTech'))
     
     return render_template('viewTech.html',username = username,role=user_role,data=get_data_frameworkWAP())
 
@@ -528,13 +532,37 @@ def deleteDataTech(url):
         for result in results:
             db.session.delete(result)
         db.session.commit()
-        return jsonify({'message': f'All records for URL {url} deleted successfully'}), 200
+        return jsonify({'message': f'Data Pengintaian Untuk URL {url} Berhasil Di Hapus'}), 200
     else:
-        return jsonify({'message': f'No records found for URL {url}'}), 404
+        return jsonify({'message': f'Tidak Ada URL Ditemukan {url}'}), 404
+
+def isPortValidIp(ip):
+    pattern = re.compile(
+        r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
+    )
+    return pattern.match(ip) is not None
+
+def isPortValidHostname(hostname):
+    if len(hostname) > 255:
+        return False
+    if hostname[-1] == ".":
+        hostname = hostname[:-1]
+    allowed = re.compile(
+        r"(?!-)[A-Z\d-]{1,63}(?<!-)$", re.IGNORECASE
+    )
+    return all(allowed.match(x) for x in hostname.split("."))
+
+def isPortValidtarget(target):
+    return isPortValidIp(target) or isPortValidHostname(target)
 
 def perform_nmap_scan(target):
     nm = nmap.PortScanner()
-    nm.scan(hosts=target, arguments='-sV --script vulners')
+    try:
+        nm.scan(hosts=target, arguments='-sV --script vulners')
+    except nmap.PortScannerError as e:
+        return {'error': f'Nmap scanner error: {str(e)}'}
+    except Exception as e:
+        return {'error': f'Error during scan: {str(e)}'}
 
     scan_results = []
 
@@ -557,7 +585,6 @@ def perform_nmap_scan(target):
                     'vulners': []
                 }
 
-                # Check if 'vulners' script output exists and is in expected format
                 if 'script' in service_info and 'vulners' in service_info['script']:
                     vulners_output = service_info['script']['vulners']
                     if isinstance(vulners_output, dict):
@@ -598,8 +625,13 @@ def perform_nmap_scan(target):
                     )
                     db.session.add(scan_entry)
 
+                scan_results.append(port_info)
+
+    try:
         db.session.commit()
-        scan_results.append(port_info)
+    except Exception as e:
+        db.session.rollback()
+        return {'error': str(e)}
 
     return scan_results
 
@@ -644,14 +676,25 @@ def delete_nmap(hostname):
     for result in results:
         db.session.delete(result)
     db.session.commit()
-    return jsonify({"message": f"All records for hostname {hostname} deleted successfully"})
+    return jsonify({"message": f"Data Hostname untuk {hostname} Berhasil Di Hapus"})
 
 @app.route('/nmap_start', methods=['GET','POST'])
 def nmapStart():
-    target = request.form.get('target')
-    results= perform_nmap_scan(target)
-    return redirect(url_for('viewPort'))
-    # return render_template('detailPort.html', results=results ,data=get_data_scanNmap())
+    if request.method == 'POST':
+        target = request.form['target']
+        
+        if not isPortValidtarget(target):
+            flash('Error: Invalid target. Please enter a valid IP address or hostname.', 'danger')
+            return redirect(url_for('viewPort'))
+        
+        try:
+            result = perform_nmap_scan(target)
+        except Exception as e:
+            flash(f'Error: {str(e)}', 'danger')
+            return redirect(url_for('viewPort'))
+        
+        flash('Data Pemindaian Port Berhasil Di Tambahkan', 'success')
+        return redirect(url_for('viewPort'))
 
 @app.route('/viewScore')
 @login_required
