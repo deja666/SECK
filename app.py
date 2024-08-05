@@ -127,6 +127,7 @@ def manageUser():
         new_user = User(username=username, password=hashed_password,role=role)
         db.session.add(new_user)
         db.session.commit()
+        flash('User berhasil ditambahkan', 'success')
         return redirect(url_for('manageUser'))
     return render_template('viewManageUser.html',role=user_role,data=getDataUser())
 
